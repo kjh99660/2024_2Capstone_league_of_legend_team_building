@@ -30,3 +30,7 @@
 *.exe
 *.out
 *.app
+
+# dev tooks
+*.ipch
+*.sdf
