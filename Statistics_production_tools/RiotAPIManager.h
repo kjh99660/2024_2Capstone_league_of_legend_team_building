@@ -2,6 +2,9 @@
 #include <cpprest/http_client.h>
 #include <iostream>
 #include <string>
+#include <vector>
+#include <sstream>
+#include <fstream>
 
 using namespace std;
 using namespace utility;                    // Common utilities like string conversions
@@ -13,7 +16,7 @@ using namespace concurrency::streams;       // Asynchronous streams
 string get_summoner_puuid_byname(const string& name, const string& tag);
 // Function to get the summoner's PUUID by name and tag(for just test API)
 
-string get_user_list_by_tier(const string& tier, const string& division);
+vector<string> get_user_list_by_tier(const string& tier, const wstring& division);
 // Function to get the list of summoners by tier and division
 
 string get_puuid_by_summonerid(const string& puuid);
