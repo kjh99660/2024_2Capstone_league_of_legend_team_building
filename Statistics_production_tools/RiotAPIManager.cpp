@@ -29,7 +29,7 @@ string get_summoner_puuid_byname(const string& name, const string& tag) {
 }
 
 //티어별로 유저 리스트를 가져오는 함수
-vector<string> get_user_list_by_tier(const string& tier, wstring& division) {
+vector<string> get_user_list_by_tier(const string& tier, const wstring& division) {
     string path = "/lol/league/v4/entries/";
 
     uri_builder builder(conversions::to_string_t(path));

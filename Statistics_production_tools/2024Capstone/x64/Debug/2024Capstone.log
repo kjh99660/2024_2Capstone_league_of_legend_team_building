@@ -1,2 +1,711 @@
 ﻿  2024Capstone.cpp
-  2024Capstone.vcxproj -> D:\Development_Repository\2024Capstone\x64\Debug\2024Capstone.exe
+D:\Development_Repository\2024Capstone_league\Statistics_production_tools\packages\cpprestsdk.v142.2.10.15\build\native\include\cpprest\containerstream.h(404,47): error C4996: 'stdext::checked_array_iterator<char *>': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+  (소스 파일 '2024Capstone.cpp'을(를) 컴파일하는 중)
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\iterator(1470,35):
+  'stdext::checked_array_iterator' 선언을 참조하십시오.
+  D:\Development_Repository\2024Capstone_league\Statistics_production_tools\packages\cpprestsdk.v142.2.10.15\build\native\include\cpprest\containerstream.h(404,47):
+  템플릿 인스턴스화 컨텍스트(가장 오래된 인스턴스화 컨텍스트)가
+  	D:\Development_Repository\2024Capstone_league\Statistics_production_tools\packages\cpprestsdk.v142.2.10.15\build\native\include\cpprest\http_msg.h(689,47):
+  	컴파일되는 함수 템플릿 인스턴스화 'Concurrency::streams::istream Concurrency::streams::bytestream::open_istream<std::string>(_CollectionType)'에 대한 참조를 확인하세요.
+          with
+          [
+              _CollectionType=std::string
+          ]
+  	D:\Development_Repository\2024Capstone_league\Statistics_production_tools\packages\cpprestsdk.v142.2.10.15\build\native\include\cpprest\containerstream.h(574,55):
+  	컴파일되는 클래스 템플릿 인스턴스화 'Concurrency::streams::container_buffer<_CollectionType>'에 대한 참조를 확인하세요.
+          with
+          [
+              _CollectionType=std::basic_string<char,std::char_traits<char>,std::allocator<char>>
+          ]
+  	D:\Development_Repository\2024Capstone_league\Statistics_production_tools\packages\cpprestsdk.v142.2.10.15\build\native\include\cpprest\containerstream.h(490,5):
+  	클래스 템플릿 멤버 함수 'Concurrency::streams::container_buffer<_CollectionType>::container_buffer(_CollectionType,std::ios_base::openmode)'을(를) 컴파일하는 중입니다.
+          with
+          [
+              _CollectionType=std::basic_string<char,std::char_traits<char>,std::allocator<char>>
+          ]
+  		D:\Development_Repository\2024Capstone_league\Statistics_production_tools\packages\cpprestsdk.v142.2.10.15\build\native\include\cpprest\containerstream.h(573,9):
+  		'Concurrency::streams::bytestream::open_istream'에서 'Concurrency::streams::container_buffer<_CollectionType>::container_buffer'에 대한 첫 번째 참조를 확인하세요.
+          with
+          [
+              _CollectionType=std::basic_string<char,std::char_traits<char>,std::allocator<char>>
+          ]
+  	D:\Development_Repository\2024Capstone_league\Statistics_production_tools\packages\cpprestsdk.v142.2.10.15\build\native\include\cpprest\containerstream.h(493,41):
+  	컴파일되는 클래스 템플릿 인스턴스화 'Concurrency::streams::details::basic_container_buffer<_CollectionType>'에 대한 참조를 확인하세요.
+          with
+          [
+              _CollectionType=std::basic_string<char,std::char_traits<char>,std::allocator<char>>
+          ]
+  	D:\Development_Repository\2024Capstone_league\Statistics_production_tools\packages\cpprestsdk.v142.2.10.15\build\native\include\cpprest\containerstream.h(390,12):
+  	클래스 템플릿 멤버 함수 'size_t Concurrency::streams::details::basic_container_buffer<_CollectionType>::read(char *,size_t,bool)'을(를) 컴파일하는 중입니다.
+          with
+          [
+              _CollectionType=std::basic_string<char,std::char_traits<char>,std::allocator<char>>
+          ]
+  		D:\Development_Repository\2024Capstone_league\Statistics_production_tools\packages\cpprestsdk.v142.2.10.15\build\native\include\cpprest\containerstream.h(214,9):
+  		'Concurrency::streams::details::basic_container_buffer<_CollectionType>::_scopy'에서 'Concurrency::streams::details::basic_container_buffer<_CollectionType>::read'에 대한 첫 번째 참조를 확인하세요.
+          with
+          [
+              _CollectionType=std::basic_string<char,std::char_traits<char>,std::allocator<char>>
+          ]
+  
+D:\Development_Repository\2024Capstone_league\Statistics_production_tools\packages\cpprestsdk.v142.2.10.15\build\native\include\cpprest\containerstream.h(404,81): error C4996: 'stdext::checked_array_iterator<char *>::checked_array_iterator': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+  (소스 파일 '2024Capstone.cpp'을(를) 컴파일하는 중)
+  
+D:\Development_Repository\2024Capstone_league\Statistics_production_tools\packages\cpprestsdk.v142.2.10.15\build\native\include\cpprest\containerstream.h(404,47): error C4996: 'stdext::checked_array_iterator<unsigned char *>': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+  (소스 파일 '2024Capstone.cpp'을(를) 컴파일하는 중)
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\iterator(1470,35):
+  'stdext::checked_array_iterator' 선언을 참조하십시오.
+  D:\Development_Repository\2024Capstone_league\Statistics_production_tools\packages\cpprestsdk.v142.2.10.15\build\native\include\cpprest\containerstream.h(404,47):
+  템플릿 인스턴스화 컨텍스트(가장 오래된 인스턴스화 컨텍스트)가
+  	D:\Development_Repository\2024Capstone_league\Statistics_production_tools\packages\cpprestsdk.v142.2.10.15\build\native\include\cpprest\http_msg.h(758,52):
+  	컴파일되는 함수 템플릿 인스턴스화 'Concurrency::streams::istream Concurrency::streams::bytestream::open_istream<std::vector<unsigned char,std::allocator<unsigned char>>>(_CollectionType)'에 대한 참조를 확인하세요.
+          with
+          [
+              _CollectionType=std::vector<unsigned char,std::allocator<unsigned char>>
+          ]
+  	D:\Development_Repository\2024Capstone_league\Statistics_production_tools\packages\cpprestsdk.v142.2.10.15\build\native\include\cpprest\containerstream.h(574,55):
+  	컴파일되는 클래스 템플릿 인스턴스화 'Concurrency::streams::container_buffer<std::vector<unsigned char,std::allocator<unsigned char>>>'에 대한 참조를 확인하세요.
+  	D:\Development_Repository\2024Capstone_league\Statistics_production_tools\packages\cpprestsdk.v142.2.10.15\build\native\include\cpprest\containerstream.h(490,5):
+  	클래스 템플릿 멤버 함수 'Concurrency::streams::container_buffer<std::vector<unsigned char,std::allocator<unsigned char>>>::container_buffer(_CollectionType,std::ios_base::openmode)'을(를) 컴파일하는 중입니다.
+          with
+          [
+              _CollectionType=std::vector<unsigned char,std::allocator<unsigned char>>
+          ]
+  		D:\Development_Repository\2024Capstone_league\Statistics_production_tools\packages\cpprestsdk.v142.2.10.15\build\native\include\cpprest\containerstream.h(573,9):
+  		'Concurrency::streams::bytestream::open_istream'에서 'Concurrency::streams::container_buffer<std::vector<unsigned char,std::allocator<unsigned char>>>::container_buffer'에 대한 첫 번째 참조를 확인하세요.
+  	D:\Development_Repository\2024Capstone_league\Statistics_production_tools\packages\cpprestsdk.v142.2.10.15\build\native\include\cpprest\containerstream.h(493,41):
+  	컴파일되는 클래스 템플릿 인스턴스화 'Concurrency::streams::details::basic_container_buffer<_CollectionType>'에 대한 참조를 확인하세요.
+          with
+          [
+              _CollectionType=std::vector<unsigned char,std::allocator<unsigned char>>
+          ]
+  	D:\Development_Repository\2024Capstone_league\Statistics_production_tools\packages\cpprestsdk.v142.2.10.15\build\native\include\cpprest\containerstream.h(390,12):
+  	클래스 템플릿 멤버 함수 'size_t Concurrency::streams::details::basic_container_buffer<_CollectionType>::read(unsigned char *,size_t,bool)'을(를) 컴파일하는 중입니다.
+          with
+          [
+              _CollectionType=std::vector<unsigned char,std::allocator<unsigned char>>
+          ]
+  		D:\Development_Repository\2024Capstone_league\Statistics_production_tools\packages\cpprestsdk.v142.2.10.15\build\native\include\cpprest\containerstream.h(214,9):
+  		'Concurrency::streams::details::basic_container_buffer<_CollectionType>::_scopy'에서 'Concurrency::streams::details::basic_container_buffer<_CollectionType>::read'에 대한 첫 번째 참조를 확인하세요.
+          with
+          [
+              _CollectionType=std::vector<unsigned char,std::allocator<unsigned char>>
+          ]
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xutility(1151,31): error C4996: 'stdext::checked_array_iterator<char *>': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+  (소스 파일 '2024Capstone.cpp'을(를) 컴파일하는 중)
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\iterator(1470,35):
+  'stdext::checked_array_iterator' 선언을 참조하십시오.
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xutility(1151,31):
+  템플릿 인스턴스화 컨텍스트(가장 오래된 인스턴스화 컨텍스트)가
+  	D:\Development_Repository\2024Capstone_league\Statistics_production_tools\packages\cpprestsdk.v142.2.10.15\build\native\include\cpprest\containerstream.h(390,12):
+  	클래스 템플릿 멤버 함수 'size_t Concurrency::streams::details::basic_container_buffer<_CollectionType>::read(char *,size_t,bool)'을(를) 컴파일하는 중입니다.
+          with
+          [
+              _CollectionType=std::basic_string<char,std::char_traits<char>,std::allocator<char>>
+          ]
+  		D:\Development_Repository\2024Capstone_league\Statistics_production_tools\packages\cpprestsdk.v142.2.10.15\build\native\include\cpprest\containerstream.h(214,9):
+  		'Concurrency::streams::details::basic_container_buffer<_CollectionType>::_scopy'에서 'Concurrency::streams::details::basic_container_buffer<_CollectionType>::read'에 대한 첫 번째 참조를 확인하세요.
+          with
+          [
+              _CollectionType=std::basic_string<char,std::char_traits<char>,std::allocator<char>>
+          ]
+  	D:\Development_Repository\2024Capstone_league\Statistics_production_tools\packages\cpprestsdk.v142.2.10.15\build\native\include\cpprest\containerstream.h(404,14):
+  	컴파일되는 함수 템플릿 인스턴스화 '_OutIt std::copy<std::_String_iterator<std::_String_val<std::_Simple_types<_Elem>>>,stdext::checked_array_iterator<char *>>(_InIt,_InIt,_OutIt)'에 대한 참조를 확인하세요.
+          with
+          [
+              _OutIt=stdext::checked_array_iterator<char *>,
+              _Elem=char,
+              _InIt=std::_String_iterator<std::_String_val<std::_Simple_types<char>>>
+          ]
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xutility(4588,26):
+  	컴파일되는 함수 템플릿 인스턴스화 'decltype(auto) std::_Get_unwrapped_n<_OutIt&,__int64>(_Iter,const _Diff)'에 대한 참조를 확인하세요.
+          with
+          [
+              _OutIt=stdext::checked_array_iterator<char *>,
+              _Iter=stdext::checked_array_iterator<char *> &,
+              _Diff=__int64
+          ]
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xutility(1254,26):
+  	컴파일되는 변수 템플릿 'const bool _Unwrappable_for_offset_v<stdext::checked_array_iterator<char *> &>'에 대한 참조를 확인하세요.
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xutility(1248,5):
+  	컴파일되는 변수 템플릿 'const bool _Unwrappable_v<stdext::checked_array_iterator<char *> &,void>'에 대한 참조를 확인하세요.
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xutility(1175,5):
+  	컴파일되는 변수 템플릿 'const bool _Allow_inheriting_unwrap_v<stdext::checked_array_iterator<char *>,void>'에 대한 참조를 확인하세요.
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\__msvc_iter_core.hpp(190,40): error C4996: 'stdext::checked_array_iterator<char *>': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+  (소스 파일 '2024Capstone.cpp'을(를) 컴파일하는 중)
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\iterator(1470,35):
+  'stdext::checked_array_iterator' 선언을 참조하십시오.
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\__msvc_iter_core.hpp(190,40):
+  템플릿 인스턴스화 컨텍스트(가장 오래된 인스턴스화 컨텍스트)가
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xutility(1243,93):
+  	컴파일되는 별칭 템플릿 인스턴스화 'std::_Iter_diff_t<stdext::checked_array_iterator<char *>>'에 대한 참조를 확인하세요.
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xutility(1056,22):
+  	컴파일되는 별칭 템플릿 인스턴스화 'std::iter_difference_t<stdext::checked_array_iterator<char *>>'에 대한 참조를 확인하세요.
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\__msvc_iter_core.hpp(120,50):
+  	컴파일되는 변수 템플릿 'bool _Is_from_primary<std::iterator_traits<stdext::checked_array_iterator<char *> > >'에 대한 참조를 확인하세요.
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\__msvc_iter_core.hpp(114,53):
+  	컴파일되는 클래스 템플릿 인스턴스화 'std::iterator_traits<stdext::checked_array_iterator<char *>>'에 대한 참조를 확인하세요.
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\__msvc_iter_core.hpp(373,26):
+  	컴파일되는 클래스 템플릿 인스턴스화 'std::_Iterator_traits_base<_Ty>'에 대한 참조를 확인하세요.
+          with
+          [
+              _Ty=stdext::checked_array_iterator<char *>
+          ]
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\__msvc_iter_core.hpp(190,31): error C4996: 'stdext::checked_array_iterator<char *>::iterator_category': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+  (소스 파일 '2024Capstone.cpp'을(를) 컴파일하는 중)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\__msvc_iter_core.hpp(191,40): error C4996: 'stdext::checked_array_iterator<char *>': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+  (소스 파일 '2024Capstone.cpp'을(를) 컴파일하는 중)
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\iterator(1470,35):
+  'stdext::checked_array_iterator' 선언을 참조하십시오.
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\__msvc_iter_core.hpp(191,31): error C4996: 'stdext::checked_array_iterator<char *>::value_type': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+  (소스 파일 '2024Capstone.cpp'을(를) 컴파일하는 중)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\__msvc_iter_core.hpp(192,40): error C4996: 'stdext::checked_array_iterator<char *>': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+  (소스 파일 '2024Capstone.cpp'을(를) 컴파일하는 중)
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\iterator(1470,35):
+  'stdext::checked_array_iterator' 선언을 참조하십시오.
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\__msvc_iter_core.hpp(192,31): error C4996: 'stdext::checked_array_iterator<char *>::difference_type': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+  (소스 파일 '2024Capstone.cpp'을(를) 컴파일하는 중)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\__msvc_iter_core.hpp(179,29): error C4996: 'stdext::checked_array_iterator<char *>': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+  (소스 파일 '2024Capstone.cpp'을(를) 컴파일하는 중)
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\iterator(1470,35):
+  'stdext::checked_array_iterator' 선언을 참조하십시오.
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\__msvc_iter_core.hpp(179,29):
+  템플릿 인스턴스화 컨텍스트(가장 오래된 인스턴스화 컨텍스트)가
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\__msvc_iter_core.hpp(193,101):
+  	컴파일되는 별칭 템플릿 인스턴스화 'std::_Old_iter_traits_pointer<true>::_Apply<_It>'에 대한 참조를 확인하세요.
+          with
+          [
+              _It=stdext::checked_array_iterator<char *>
+          ]
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\__msvc_iter_core.hpp(194,40): error C4996: 'stdext::checked_array_iterator<char *>': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+  (소스 파일 '2024Capstone.cpp'을(를) 컴파일하는 중)
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\iterator(1470,35):
+  'stdext::checked_array_iterator' 선언을 참조하십시오.
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\__msvc_iter_core.hpp(194,31): error C4996: 'stdext::checked_array_iterator<char *>::reference': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+  (소스 파일 '2024Capstone.cpp'을(를) 컴파일하는 중)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\__msvc_iter_core.hpp(99,38): error C4996: 'stdext::checked_array_iterator<char *>': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+  (소스 파일 '2024Capstone.cpp'을(를) 컴파일하는 중)
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\iterator(1470,35):
+  'stdext::checked_array_iterator' 선언을 참조하십시오.
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\__msvc_iter_core.hpp(99,38):
+  템플릿 인스턴스화 컨텍스트(가장 오래된 인스턴스화 컨텍스트)가
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\__msvc_iter_core.hpp(121,87):
+  	컴파일되는 클래스 템플릿 인스턴스화 'std::incrementable_traits<stdext::checked_array_iterator<char *>>'에 대한 참조를 확인하세요.
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\__msvc_iter_core.hpp(99,29): error C4996: 'stdext::checked_array_iterator<char *>::difference_type': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+  (소스 파일 '2024Capstone.cpp'을(를) 컴파일하는 중)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xutility(1265,12): error C4996: 'stdext::checked_array_iterator<char *>::_Verify_offset': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+  (소스 파일 '2024Capstone.cpp'을(를) 컴파일하는 중)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xutility(1266,41): error C4996: 'stdext::checked_array_iterator<char *>::_Unwrapped': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+  (소스 파일 '2024Capstone.cpp'을(를) 컴파일하는 중)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xutility(1151,31): error C4996: 'stdext::checked_array_iterator<unsigned char *>': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+  (소스 파일 '2024Capstone.cpp'을(를) 컴파일하는 중)
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\iterator(1470,35):
+  'stdext::checked_array_iterator' 선언을 참조하십시오.
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xutility(1151,31):
+  템플릿 인스턴스화 컨텍스트(가장 오래된 인스턴스화 컨텍스트)가
+  	D:\Development_Repository\2024Capstone_league\Statistics_production_tools\packages\cpprestsdk.v142.2.10.15\build\native\include\cpprest\containerstream.h(390,12):
+  	클래스 템플릿 멤버 함수 'size_t Concurrency::streams::details::basic_container_buffer<_CollectionType>::read(unsigned char *,size_t,bool)'을(를) 컴파일하는 중입니다.
+          with
+          [
+              _CollectionType=std::vector<unsigned char,std::allocator<unsigned char>>
+          ]
+  		D:\Development_Repository\2024Capstone_league\Statistics_production_tools\packages\cpprestsdk.v142.2.10.15\build\native\include\cpprest\containerstream.h(214,9):
+  		'Concurrency::streams::details::basic_container_buffer<_CollectionType>::_scopy'에서 'Concurrency::streams::details::basic_container_buffer<_CollectionType>::read'에 대한 첫 번째 참조를 확인하세요.
+          with
+          [
+              _CollectionType=std::vector<unsigned char,std::allocator<unsigned char>>
+          ]
+  	D:\Development_Repository\2024Capstone_league\Statistics_production_tools\packages\cpprestsdk.v142.2.10.15\build\native\include\cpprest\containerstream.h(404,14):
+  	컴파일되는 함수 템플릿 인스턴스화 '_OutIt std::copy<std::_Vector_iterator<std::_Vector_val<std::_Simple_types<_Elem>>>,stdext::checked_array_iterator<unsigned char *>>(_InIt,_InIt,_OutIt)'에 대한 참조를 확인하세요.
+          with
+          [
+              _OutIt=stdext::checked_array_iterator<unsigned char *>,
+              _Elem=uint8_t,
+              _InIt=std::_Vector_iterator<std::_Vector_val<std::_Simple_types<uint8_t>>>
+          ]
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xutility(4588,26):
+  	컴파일되는 함수 템플릿 인스턴스화 'decltype(auto) std::_Get_unwrapped_n<_OutIt&,__int64>(_Iter,const _Diff)'에 대한 참조를 확인하세요.
+          with
+          [
+              _OutIt=stdext::checked_array_iterator<unsigned char *>,
+              _Iter=stdext::checked_array_iterator<unsigned char *> &,
+              _Diff=__int64
+          ]
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xutility(1254,26):
+  	컴파일되는 변수 템플릿 'const bool _Unwrappable_for_offset_v<stdext::checked_array_iterator<unsigned char *> &>'에 대한 참조를 확인하세요.
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xutility(1248,5):
+  	컴파일되는 변수 템플릿 'const bool _Unwrappable_v<stdext::checked_array_iterator<unsigned char *> &,void>'에 대한 참조를 확인하세요.
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xutility(1175,5):
+  	컴파일되는 변수 템플릿 'const bool _Allow_inheriting_unwrap_v<stdext::checked_array_iterator<unsigned char *>,void>'에 대한 참조를 확인하세요.
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\__msvc_iter_core.hpp(190,40): error C4996: 'stdext::checked_array_iterator<unsigned char *>': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+  (소스 파일 '2024Capstone.cpp'을(를) 컴파일하는 중)
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\iterator(1470,35):
+  'stdext::checked_array_iterator' 선언을 참조하십시오.
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\__msvc_iter_core.hpp(190,40):
+  템플릿 인스턴스화 컨텍스트(가장 오래된 인스턴스화 컨텍스트)가
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xutility(1243,93):
+  	컴파일되는 별칭 템플릿 인스턴스화 'std::_Iter_diff_t<stdext::checked_array_iterator<unsigned char *>>'에 대한 참조를 확인하세요.
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xutility(1056,22):
+  	컴파일되는 별칭 템플릿 인스턴스화 'std::iter_difference_t<stdext::checked_array_iterator<unsigned char *>>'에 대한 참조를 확인하세요.
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\__msvc_iter_core.hpp(120,50):
+  	컴파일되는 변수 템플릿 'bool _Is_from_primary<std::iterator_traits<stdext::checked_array_iterator<unsigned char *> > >'에 대한 참조를 확인하세요.
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\__msvc_iter_core.hpp(114,53):
+  	컴파일되는 클래스 템플릿 인스턴스화 'std::iterator_traits<stdext::checked_array_iterator<unsigned char *>>'에 대한 참조를 확인하세요.
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\__msvc_iter_core.hpp(373,26):
+  	컴파일되는 클래스 템플릿 인스턴스화 'std::_Iterator_traits_base<_Ty>'에 대한 참조를 확인하세요.
+          with
+          [
+              _Ty=stdext::checked_array_iterator<unsigned char *>
+          ]
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\__msvc_iter_core.hpp(190,31): error C4996: 'stdext::checked_array_iterator<unsigned char *>::iterator_category': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+  (소스 파일 '2024Capstone.cpp'을(를) 컴파일하는 중)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\__msvc_iter_core.hpp(191,40): error C4996: 'stdext::checked_array_iterator<unsigned char *>': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+  (소스 파일 '2024Capstone.cpp'을(를) 컴파일하는 중)
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\iterator(1470,35):
+  'stdext::checked_array_iterator' 선언을 참조하십시오.
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\__msvc_iter_core.hpp(191,31): error C4996: 'stdext::checked_array_iterator<unsigned char *>::value_type': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+  (소스 파일 '2024Capstone.cpp'을(를) 컴파일하는 중)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\__msvc_iter_core.hpp(192,40): error C4996: 'stdext::checked_array_iterator<unsigned char *>': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+  (소스 파일 '2024Capstone.cpp'을(를) 컴파일하는 중)
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\iterator(1470,35):
+  'stdext::checked_array_iterator' 선언을 참조하십시오.
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\__msvc_iter_core.hpp(192,31): error C4996: 'stdext::checked_array_iterator<unsigned char *>::difference_type': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+  (소스 파일 '2024Capstone.cpp'을(를) 컴파일하는 중)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\__msvc_iter_core.hpp(179,29): error C4996: 'stdext::checked_array_iterator<unsigned char *>': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+  (소스 파일 '2024Capstone.cpp'을(를) 컴파일하는 중)
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\iterator(1470,35):
+  'stdext::checked_array_iterator' 선언을 참조하십시오.
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\__msvc_iter_core.hpp(179,29):
+  템플릿 인스턴스화 컨텍스트(가장 오래된 인스턴스화 컨텍스트)가
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\__msvc_iter_core.hpp(193,101):
+  	컴파일되는 별칭 템플릿 인스턴스화 'std::_Old_iter_traits_pointer<true>::_Apply<_It>'에 대한 참조를 확인하세요.
+          with
+          [
+              _It=stdext::checked_array_iterator<unsigned char *>
+          ]
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\__msvc_iter_core.hpp(194,40): error C4996: 'stdext::checked_array_iterator<unsigned char *>': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+  (소스 파일 '2024Capstone.cpp'을(를) 컴파일하는 중)
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\iterator(1470,35):
+  'stdext::checked_array_iterator' 선언을 참조하십시오.
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\__msvc_iter_core.hpp(194,31): error C4996: 'stdext::checked_array_iterator<unsigned char *>::reference': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+  (소스 파일 '2024Capstone.cpp'을(를) 컴파일하는 중)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\__msvc_iter_core.hpp(99,38): error C4996: 'stdext::checked_array_iterator<unsigned char *>': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+  (소스 파일 '2024Capstone.cpp'을(를) 컴파일하는 중)
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\iterator(1470,35):
+  'stdext::checked_array_iterator' 선언을 참조하십시오.
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\__msvc_iter_core.hpp(99,38):
+  템플릿 인스턴스화 컨텍스트(가장 오래된 인스턴스화 컨텍스트)가
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\__msvc_iter_core.hpp(121,87):
+  	컴파일되는 클래스 템플릿 인스턴스화 'std::incrementable_traits<stdext::checked_array_iterator<unsigned char *>>'에 대한 참조를 확인하세요.
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\__msvc_iter_core.hpp(99,29): error C4996: 'stdext::checked_array_iterator<unsigned char *>::difference_type': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+  (소스 파일 '2024Capstone.cpp'을(를) 컴파일하는 중)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xutility(1265,12): error C4996: 'stdext::checked_array_iterator<unsigned char *>::_Verify_offset': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+  (소스 파일 '2024Capstone.cpp'을(를) 컴파일하는 중)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xutility(1266,41): error C4996: 'stdext::checked_array_iterator<unsigned char *>::_Unwrapped': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+  (소스 파일 '2024Capstone.cpp'을(를) 컴파일하는 중)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xutility(1287,12): error C4996: 'stdext::checked_array_iterator<char *>::_Seek_to': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+  (소스 파일 '2024Capstone.cpp'을(를) 컴파일하는 중)
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xutility(1287,12):
+  템플릿 인스턴스화 컨텍스트(가장 오래된 인스턴스화 컨텍스트)가
+  	D:\Development_Repository\2024Capstone_league\Statistics_production_tools\packages\cpprestsdk.v142.2.10.15\build\native\include\cpprest\containerstream.h(404,14):
+  	컴파일되는 함수 템플릿 인스턴스화 '_OutIt std::copy<std::_String_iterator<std::_String_val<std::_Simple_types<_Elem>>>,stdext::checked_array_iterator<char *>>(_InIt,_InIt,_OutIt)'에 대한 참조를 확인하세요.
+          with
+          [
+              _OutIt=stdext::checked_array_iterator<char *>,
+              _Elem=char,
+              _InIt=std::_String_iterator<std::_String_val<std::_Simple_types<char>>>
+          ]
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xutility(4589,5):
+  	컴파일되는 함수 템플릿 인스턴스화 'void std::_Seek_wrapped<_OutIt,char*>(_Iter &,_UIter &&)'에 대한 참조를 확인하세요.
+          with
+          [
+              _OutIt=stdext::checked_array_iterator<char *>,
+              _Iter=stdext::checked_array_iterator<char *>,
+              _UIter=char *
+          ]
+  
+  RiotAPIManager.cpp
+D:\Development_Repository\2024Capstone_league\Statistics_production_tools\packages\cpprestsdk.v142.2.10.15\build\native\include\cpprest\containerstream.h(404,47): error C4996: 'stdext::checked_array_iterator<char *>': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+  (소스 파일 'RiotAPIManager.cpp'을(를) 컴파일하는 중)
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\iterator(1470,35):
+  'stdext::checked_array_iterator' 선언을 참조하십시오.
+  D:\Development_Repository\2024Capstone_league\Statistics_production_tools\packages\cpprestsdk.v142.2.10.15\build\native\include\cpprest\containerstream.h(404,47):
+  템플릿 인스턴스화 컨텍스트(가장 오래된 인스턴스화 컨텍스트)가
+  	D:\Development_Repository\2024Capstone_league\Statistics_production_tools\packages\cpprestsdk.v142.2.10.15\build\native\include\cpprest\http_msg.h(689,47):
+  	컴파일되는 함수 템플릿 인스턴스화 'Concurrency::streams::istream Concurrency::streams::bytestream::open_istream<std::string>(_CollectionType)'에 대한 참조를 확인하세요.
+          with
+          [
+              _CollectionType=std::string
+          ]
+  	D:\Development_Repository\2024Capstone_league\Statistics_production_tools\packages\cpprestsdk.v142.2.10.15\build\native\include\cpprest\containerstream.h(574,55):
+  	컴파일되는 클래스 템플릿 인스턴스화 'Concurrency::streams::container_buffer<_CollectionType>'에 대한 참조를 확인하세요.
+          with
+          [
+              _CollectionType=std::basic_string<char,std::char_traits<char>,std::allocator<char>>
+          ]
+  	D:\Development_Repository\2024Capstone_league\Statistics_production_tools\packages\cpprestsdk.v142.2.10.15\build\native\include\cpprest\containerstream.h(490,5):
+  	클래스 템플릿 멤버 함수 'Concurrency::streams::container_buffer<_CollectionType>::container_buffer(_CollectionType,std::ios_base::openmode)'을(를) 컴파일하는 중입니다.
+          with
+          [
+              _CollectionType=std::basic_string<char,std::char_traits<char>,std::allocator<char>>
+          ]
+  		D:\Development_Repository\2024Capstone_league\Statistics_production_tools\packages\cpprestsdk.v142.2.10.15\build\native\include\cpprest\containerstream.h(573,9):
+  		'Concurrency::streams::bytestream::open_istream'에서 'Concurrency::streams::container_buffer<_CollectionType>::container_buffer'에 대한 첫 번째 참조를 확인하세요.
+          with
+          [
+              _CollectionType=std::basic_string<char,std::char_traits<char>,std::allocator<char>>
+          ]
+  	D:\Development_Repository\2024Capstone_league\Statistics_production_tools\packages\cpprestsdk.v142.2.10.15\build\native\include\cpprest\containerstream.h(493,41):
+  	컴파일되는 클래스 템플릿 인스턴스화 'Concurrency::streams::details::basic_container_buffer<_CollectionType>'에 대한 참조를 확인하세요.
+          with
+          [
+              _CollectionType=std::basic_string<char,std::char_traits<char>,std::allocator<char>>
+          ]
+  	D:\Development_Repository\2024Capstone_league\Statistics_production_tools\packages\cpprestsdk.v142.2.10.15\build\native\include\cpprest\containerstream.h(390,12):
+  	클래스 템플릿 멤버 함수 'size_t Concurrency::streams::details::basic_container_buffer<_CollectionType>::read(char *,size_t,bool)'을(를) 컴파일하는 중입니다.
+          with
+          [
+              _CollectionType=std::basic_string<char,std::char_traits<char>,std::allocator<char>>
+          ]
+  		D:\Development_Repository\2024Capstone_league\Statistics_production_tools\packages\cpprestsdk.v142.2.10.15\build\native\include\cpprest\containerstream.h(214,9):
+  		'Concurrency::streams::details::basic_container_buffer<_CollectionType>::_scopy'에서 'Concurrency::streams::details::basic_container_buffer<_CollectionType>::read'에 대한 첫 번째 참조를 확인하세요.
+          with
+          [
+              _CollectionType=std::basic_string<char,std::char_traits<char>,std::allocator<char>>
+          ]
+  
+D:\Development_Repository\2024Capstone_league\Statistics_production_tools\packages\cpprestsdk.v142.2.10.15\build\native\include\cpprest\containerstream.h(404,81): error C4996: 'stdext::checked_array_iterator<char *>::checked_array_iterator': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+  (소스 파일 'RiotAPIManager.cpp'을(를) 컴파일하는 중)
+  
+D:\Development_Repository\2024Capstone_league\Statistics_production_tools\packages\cpprestsdk.v142.2.10.15\build\native\include\cpprest\containerstream.h(404,47): error C4996: 'stdext::checked_array_iterator<unsigned char *>': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+  (소스 파일 'RiotAPIManager.cpp'을(를) 컴파일하는 중)
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\iterator(1470,35):
+  'stdext::checked_array_iterator' 선언을 참조하십시오.
+  D:\Development_Repository\2024Capstone_league\Statistics_production_tools\packages\cpprestsdk.v142.2.10.15\build\native\include\cpprest\containerstream.h(404,47):
+  템플릿 인스턴스화 컨텍스트(가장 오래된 인스턴스화 컨텍스트)가
+  	D:\Development_Repository\2024Capstone_league\Statistics_production_tools\packages\cpprestsdk.v142.2.10.15\build\native\include\cpprest\http_msg.h(758,52):
+  	컴파일되는 함수 템플릿 인스턴스화 'Concurrency::streams::istream Concurrency::streams::bytestream::open_istream<std::vector<unsigned char,std::allocator<unsigned char>>>(_CollectionType)'에 대한 참조를 확인하세요.
+          with
+          [
+              _CollectionType=std::vector<unsigned char,std::allocator<unsigned char>>
+          ]
+  	D:\Development_Repository\2024Capstone_league\Statistics_production_tools\packages\cpprestsdk.v142.2.10.15\build\native\include\cpprest\containerstream.h(574,55):
+  	컴파일되는 클래스 템플릿 인스턴스화 'Concurrency::streams::container_buffer<std::vector<unsigned char,std::allocator<unsigned char>>>'에 대한 참조를 확인하세요.
+  	D:\Development_Repository\2024Capstone_league\Statistics_production_tools\packages\cpprestsdk.v142.2.10.15\build\native\include\cpprest\containerstream.h(490,5):
+  	클래스 템플릿 멤버 함수 'Concurrency::streams::container_buffer<std::vector<unsigned char,std::allocator<unsigned char>>>::container_buffer(_CollectionType,std::ios_base::openmode)'을(를) 컴파일하는 중입니다.
+          with
+          [
+              _CollectionType=std::vector<unsigned char,std::allocator<unsigned char>>
+          ]
+  		D:\Development_Repository\2024Capstone_league\Statistics_production_tools\packages\cpprestsdk.v142.2.10.15\build\native\include\cpprest\containerstream.h(573,9):
+  		'Concurrency::streams::bytestream::open_istream'에서 'Concurrency::streams::container_buffer<std::vector<unsigned char,std::allocator<unsigned char>>>::container_buffer'에 대한 첫 번째 참조를 확인하세요.
+  	D:\Development_Repository\2024Capstone_league\Statistics_production_tools\packages\cpprestsdk.v142.2.10.15\build\native\include\cpprest\containerstream.h(493,41):
+  	컴파일되는 클래스 템플릿 인스턴스화 'Concurrency::streams::details::basic_container_buffer<_CollectionType>'에 대한 참조를 확인하세요.
+          with
+          [
+              _CollectionType=std::vector<unsigned char,std::allocator<unsigned char>>
+          ]
+  	D:\Development_Repository\2024Capstone_league\Statistics_production_tools\packages\cpprestsdk.v142.2.10.15\build\native\include\cpprest\containerstream.h(390,12):
+  	클래스 템플릿 멤버 함수 'size_t Concurrency::streams::details::basic_container_buffer<_CollectionType>::read(unsigned char *,size_t,bool)'을(를) 컴파일하는 중입니다.
+          with
+          [
+              _CollectionType=std::vector<unsigned char,std::allocator<unsigned char>>
+          ]
+  		D:\Development_Repository\2024Capstone_league\Statistics_production_tools\packages\cpprestsdk.v142.2.10.15\build\native\include\cpprest\containerstream.h(214,9):
+  		'Concurrency::streams::details::basic_container_buffer<_CollectionType>::_scopy'에서 'Concurrency::streams::details::basic_container_buffer<_CollectionType>::read'에 대한 첫 번째 참조를 확인하세요.
+          with
+          [
+              _CollectionType=std::vector<unsigned char,std::allocator<unsigned char>>
+          ]
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xutility(1151,31): error C4996: 'stdext::checked_array_iterator<char *>': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+  (소스 파일 'RiotAPIManager.cpp'을(를) 컴파일하는 중)
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\iterator(1470,35):
+  'stdext::checked_array_iterator' 선언을 참조하십시오.
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xutility(1151,31):
+  템플릿 인스턴스화 컨텍스트(가장 오래된 인스턴스화 컨텍스트)가
+  	D:\Development_Repository\2024Capstone_league\Statistics_production_tools\packages\cpprestsdk.v142.2.10.15\build\native\include\cpprest\containerstream.h(390,12):
+  	클래스 템플릿 멤버 함수 'size_t Concurrency::streams::details::basic_container_buffer<_CollectionType>::read(char *,size_t,bool)'을(를) 컴파일하는 중입니다.
+          with
+          [
+              _CollectionType=std::basic_string<char,std::char_traits<char>,std::allocator<char>>
+          ]
+  		D:\Development_Repository\2024Capstone_league\Statistics_production_tools\packages\cpprestsdk.v142.2.10.15\build\native\include\cpprest\containerstream.h(214,9):
+  		'Concurrency::streams::details::basic_container_buffer<_CollectionType>::_scopy'에서 'Concurrency::streams::details::basic_container_buffer<_CollectionType>::read'에 대한 첫 번째 참조를 확인하세요.
+          with
+          [
+              _CollectionType=std::basic_string<char,std::char_traits<char>,std::allocator<char>>
+          ]
+  	D:\Development_Repository\2024Capstone_league\Statistics_production_tools\packages\cpprestsdk.v142.2.10.15\build\native\include\cpprest\containerstream.h(404,14):
+  	컴파일되는 함수 템플릿 인스턴스화 '_OutIt std::copy<std::_String_iterator<std::_String_val<std::_Simple_types<_Elem>>>,stdext::checked_array_iterator<char *>>(_InIt,_InIt,_OutIt)'에 대한 참조를 확인하세요.
+          with
+          [
+              _OutIt=stdext::checked_array_iterator<char *>,
+              _Elem=char,
+              _InIt=std::_String_iterator<std::_String_val<std::_Simple_types<char>>>
+          ]
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xutility(4588,26):
+  	컴파일되는 함수 템플릿 인스턴스화 'decltype(auto) std::_Get_unwrapped_n<_OutIt&,__int64>(_Iter,const _Diff)'에 대한 참조를 확인하세요.
+          with
+          [
+              _OutIt=stdext::checked_array_iterator<char *>,
+              _Iter=stdext::checked_array_iterator<char *> &,
+              _Diff=__int64
+          ]
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xutility(1254,26):
+  	컴파일되는 변수 템플릿 'const bool _Unwrappable_for_offset_v<stdext::checked_array_iterator<char *> &>'에 대한 참조를 확인하세요.
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xutility(1248,5):
+  	컴파일되는 변수 템플릿 'const bool _Unwrappable_v<stdext::checked_array_iterator<char *> &,void>'에 대한 참조를 확인하세요.
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xutility(1175,5):
+  	컴파일되는 변수 템플릿 'const bool _Allow_inheriting_unwrap_v<stdext::checked_array_iterator<char *>,void>'에 대한 참조를 확인하세요.
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\__msvc_iter_core.hpp(190,40): error C4996: 'stdext::checked_array_iterator<char *>': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+  (소스 파일 'RiotAPIManager.cpp'을(를) 컴파일하는 중)
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\iterator(1470,35):
+  'stdext::checked_array_iterator' 선언을 참조하십시오.
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\__msvc_iter_core.hpp(190,40):
+  템플릿 인스턴스화 컨텍스트(가장 오래된 인스턴스화 컨텍스트)가
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xutility(1243,93):
+  	컴파일되는 별칭 템플릿 인스턴스화 'std::_Iter_diff_t<stdext::checked_array_iterator<char *>>'에 대한 참조를 확인하세요.
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xutility(1056,22):
+  	컴파일되는 별칭 템플릿 인스턴스화 'std::iter_difference_t<stdext::checked_array_iterator<char *>>'에 대한 참조를 확인하세요.
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\__msvc_iter_core.hpp(120,50):
+  	컴파일되는 변수 템플릿 'bool _Is_from_primary<std::iterator_traits<stdext::checked_array_iterator<char *> > >'에 대한 참조를 확인하세요.
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\__msvc_iter_core.hpp(114,53):
+  	컴파일되는 클래스 템플릿 인스턴스화 'std::iterator_traits<stdext::checked_array_iterator<char *>>'에 대한 참조를 확인하세요.
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\__msvc_iter_core.hpp(373,26):
+  	컴파일되는 클래스 템플릿 인스턴스화 'std::_Iterator_traits_base<_Ty>'에 대한 참조를 확인하세요.
+          with
+          [
+              _Ty=stdext::checked_array_iterator<char *>
+          ]
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\__msvc_iter_core.hpp(190,31): error C4996: 'stdext::checked_array_iterator<char *>::iterator_category': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+  (소스 파일 'RiotAPIManager.cpp'을(를) 컴파일하는 중)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\__msvc_iter_core.hpp(191,40): error C4996: 'stdext::checked_array_iterator<char *>': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+  (소스 파일 'RiotAPIManager.cpp'을(를) 컴파일하는 중)
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\iterator(1470,35):
+  'stdext::checked_array_iterator' 선언을 참조하십시오.
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\__msvc_iter_core.hpp(191,31): error C4996: 'stdext::checked_array_iterator<char *>::value_type': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+  (소스 파일 'RiotAPIManager.cpp'을(를) 컴파일하는 중)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\__msvc_iter_core.hpp(192,40): error C4996: 'stdext::checked_array_iterator<char *>': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+  (소스 파일 'RiotAPIManager.cpp'을(를) 컴파일하는 중)
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\iterator(1470,35):
+  'stdext::checked_array_iterator' 선언을 참조하십시오.
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\__msvc_iter_core.hpp(192,31): error C4996: 'stdext::checked_array_iterator<char *>::difference_type': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+  (소스 파일 'RiotAPIManager.cpp'을(를) 컴파일하는 중)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\__msvc_iter_core.hpp(179,29): error C4996: 'stdext::checked_array_iterator<char *>': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+  (소스 파일 'RiotAPIManager.cpp'을(를) 컴파일하는 중)
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\iterator(1470,35):
+  'stdext::checked_array_iterator' 선언을 참조하십시오.
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\__msvc_iter_core.hpp(179,29):
+  템플릿 인스턴스화 컨텍스트(가장 오래된 인스턴스화 컨텍스트)가
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\__msvc_iter_core.hpp(193,101):
+  	컴파일되는 별칭 템플릿 인스턴스화 'std::_Old_iter_traits_pointer<true>::_Apply<_It>'에 대한 참조를 확인하세요.
+          with
+          [
+              _It=stdext::checked_array_iterator<char *>
+          ]
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\__msvc_iter_core.hpp(194,40): error C4996: 'stdext::checked_array_iterator<char *>': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+  (소스 파일 'RiotAPIManager.cpp'을(를) 컴파일하는 중)
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\iterator(1470,35):
+  'stdext::checked_array_iterator' 선언을 참조하십시오.
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\__msvc_iter_core.hpp(194,31): error C4996: 'stdext::checked_array_iterator<char *>::reference': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+  (소스 파일 'RiotAPIManager.cpp'을(를) 컴파일하는 중)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\__msvc_iter_core.hpp(99,38): error C4996: 'stdext::checked_array_iterator<char *>': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+  (소스 파일 'RiotAPIManager.cpp'을(를) 컴파일하는 중)
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\iterator(1470,35):
+  'stdext::checked_array_iterator' 선언을 참조하십시오.
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\__msvc_iter_core.hpp(99,38):
+  템플릿 인스턴스화 컨텍스트(가장 오래된 인스턴스화 컨텍스트)가
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\__msvc_iter_core.hpp(121,87):
+  	컴파일되는 클래스 템플릿 인스턴스화 'std::incrementable_traits<stdext::checked_array_iterator<char *>>'에 대한 참조를 확인하세요.
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\__msvc_iter_core.hpp(99,29): error C4996: 'stdext::checked_array_iterator<char *>::difference_type': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+  (소스 파일 'RiotAPIManager.cpp'을(를) 컴파일하는 중)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xutility(1265,12): error C4996: 'stdext::checked_array_iterator<char *>::_Verify_offset': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+  (소스 파일 'RiotAPIManager.cpp'을(를) 컴파일하는 중)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xutility(1266,41): error C4996: 'stdext::checked_array_iterator<char *>::_Unwrapped': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+  (소스 파일 'RiotAPIManager.cpp'을(를) 컴파일하는 중)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xutility(1151,31): error C4996: 'stdext::checked_array_iterator<unsigned char *>': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+  (소스 파일 'RiotAPIManager.cpp'을(를) 컴파일하는 중)
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\iterator(1470,35):
+  'stdext::checked_array_iterator' 선언을 참조하십시오.
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xutility(1151,31):
+  템플릿 인스턴스화 컨텍스트(가장 오래된 인스턴스화 컨텍스트)가
+  	D:\Development_Repository\2024Capstone_league\Statistics_production_tools\packages\cpprestsdk.v142.2.10.15\build\native\include\cpprest\containerstream.h(390,12):
+  	클래스 템플릿 멤버 함수 'size_t Concurrency::streams::details::basic_container_buffer<_CollectionType>::read(unsigned char *,size_t,bool)'을(를) 컴파일하는 중입니다.
+          with
+          [
+              _CollectionType=std::vector<unsigned char,std::allocator<unsigned char>>
+          ]
+  		D:\Development_Repository\2024Capstone_league\Statistics_production_tools\packages\cpprestsdk.v142.2.10.15\build\native\include\cpprest\containerstream.h(214,9):
+  		'Concurrency::streams::details::basic_container_buffer<_CollectionType>::_scopy'에서 'Concurrency::streams::details::basic_container_buffer<_CollectionType>::read'에 대한 첫 번째 참조를 확인하세요.
+          with
+          [
+              _CollectionType=std::vector<unsigned char,std::allocator<unsigned char>>
+          ]
+  	D:\Development_Repository\2024Capstone_league\Statistics_production_tools\packages\cpprestsdk.v142.2.10.15\build\native\include\cpprest\containerstream.h(404,14):
+  	컴파일되는 함수 템플릿 인스턴스화 '_OutIt std::copy<std::_Vector_iterator<std::_Vector_val<std::_Simple_types<_Elem>>>,stdext::checked_array_iterator<unsigned char *>>(_InIt,_InIt,_OutIt)'에 대한 참조를 확인하세요.
+          with
+          [
+              _OutIt=stdext::checked_array_iterator<unsigned char *>,
+              _Elem=uint8_t,
+              _InIt=std::_Vector_iterator<std::_Vector_val<std::_Simple_types<uint8_t>>>
+          ]
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xutility(4588,26):
+  	컴파일되는 함수 템플릿 인스턴스화 'decltype(auto) std::_Get_unwrapped_n<_OutIt&,__int64>(_Iter,const _Diff)'에 대한 참조를 확인하세요.
+          with
+          [
+              _OutIt=stdext::checked_array_iterator<unsigned char *>,
+              _Iter=stdext::checked_array_iterator<unsigned char *> &,
+              _Diff=__int64
+          ]
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xutility(1254,26):
+  	컴파일되는 변수 템플릿 'const bool _Unwrappable_for_offset_v<stdext::checked_array_iterator<unsigned char *> &>'에 대한 참조를 확인하세요.
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xutility(1248,5):
+  	컴파일되는 변수 템플릿 'const bool _Unwrappable_v<stdext::checked_array_iterator<unsigned char *> &,void>'에 대한 참조를 확인하세요.
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xutility(1175,5):
+  	컴파일되는 변수 템플릿 'const bool _Allow_inheriting_unwrap_v<stdext::checked_array_iterator<unsigned char *>,void>'에 대한 참조를 확인하세요.
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\__msvc_iter_core.hpp(190,40): error C4996: 'stdext::checked_array_iterator<unsigned char *>': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+  (소스 파일 'RiotAPIManager.cpp'을(를) 컴파일하는 중)
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\iterator(1470,35):
+  'stdext::checked_array_iterator' 선언을 참조하십시오.
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\__msvc_iter_core.hpp(190,40):
+  템플릿 인스턴스화 컨텍스트(가장 오래된 인스턴스화 컨텍스트)가
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xutility(1243,93):
+  	컴파일되는 별칭 템플릿 인스턴스화 'std::_Iter_diff_t<stdext::checked_array_iterator<unsigned char *>>'에 대한 참조를 확인하세요.
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xutility(1056,22):
+  	컴파일되는 별칭 템플릿 인스턴스화 'std::iter_difference_t<stdext::checked_array_iterator<unsigned char *>>'에 대한 참조를 확인하세요.
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\__msvc_iter_core.hpp(120,50):
+  	컴파일되는 변수 템플릿 'bool _Is_from_primary<std::iterator_traits<stdext::checked_array_iterator<unsigned char *> > >'에 대한 참조를 확인하세요.
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\__msvc_iter_core.hpp(114,53):
+  	컴파일되는 클래스 템플릿 인스턴스화 'std::iterator_traits<stdext::checked_array_iterator<unsigned char *>>'에 대한 참조를 확인하세요.
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\__msvc_iter_core.hpp(373,26):
+  	컴파일되는 클래스 템플릿 인스턴스화 'std::_Iterator_traits_base<_Ty>'에 대한 참조를 확인하세요.
+          with
+          [
+              _Ty=stdext::checked_array_iterator<unsigned char *>
+          ]
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\__msvc_iter_core.hpp(190,31): error C4996: 'stdext::checked_array_iterator<unsigned char *>::iterator_category': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+  (소스 파일 'RiotAPIManager.cpp'을(를) 컴파일하는 중)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\__msvc_iter_core.hpp(191,40): error C4996: 'stdext::checked_array_iterator<unsigned char *>': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+  (소스 파일 'RiotAPIManager.cpp'을(를) 컴파일하는 중)
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\iterator(1470,35):
+  'stdext::checked_array_iterator' 선언을 참조하십시오.
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\__msvc_iter_core.hpp(191,31): error C4996: 'stdext::checked_array_iterator<unsigned char *>::value_type': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+  (소스 파일 'RiotAPIManager.cpp'을(를) 컴파일하는 중)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\__msvc_iter_core.hpp(192,40): error C4996: 'stdext::checked_array_iterator<unsigned char *>': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+  (소스 파일 'RiotAPIManager.cpp'을(를) 컴파일하는 중)
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\iterator(1470,35):
+  'stdext::checked_array_iterator' 선언을 참조하십시오.
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\__msvc_iter_core.hpp(192,31): error C4996: 'stdext::checked_array_iterator<unsigned char *>::difference_type': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+  (소스 파일 'RiotAPIManager.cpp'을(를) 컴파일하는 중)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\__msvc_iter_core.hpp(179,29): error C4996: 'stdext::checked_array_iterator<unsigned char *>': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+  (소스 파일 'RiotAPIManager.cpp'을(를) 컴파일하는 중)
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\iterator(1470,35):
+  'stdext::checked_array_iterator' 선언을 참조하십시오.
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\__msvc_iter_core.hpp(179,29):
+  템플릿 인스턴스화 컨텍스트(가장 오래된 인스턴스화 컨텍스트)가
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\__msvc_iter_core.hpp(193,101):
+  	컴파일되는 별칭 템플릿 인스턴스화 'std::_Old_iter_traits_pointer<true>::_Apply<_It>'에 대한 참조를 확인하세요.
+          with
+          [
+              _It=stdext::checked_array_iterator<unsigned char *>
+          ]
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\__msvc_iter_core.hpp(194,40): error C4996: 'stdext::checked_array_iterator<unsigned char *>': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+  (소스 파일 'RiotAPIManager.cpp'을(를) 컴파일하는 중)
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\iterator(1470,35):
+  'stdext::checked_array_iterator' 선언을 참조하십시오.
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\__msvc_iter_core.hpp(194,31): error C4996: 'stdext::checked_array_iterator<unsigned char *>::reference': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+  (소스 파일 'RiotAPIManager.cpp'을(를) 컴파일하는 중)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\__msvc_iter_core.hpp(99,38): error C4996: 'stdext::checked_array_iterator<unsigned char *>': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+  (소스 파일 'RiotAPIManager.cpp'을(를) 컴파일하는 중)
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\iterator(1470,35):
+  'stdext::checked_array_iterator' 선언을 참조하십시오.
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\__msvc_iter_core.hpp(99,38):
+  템플릿 인스턴스화 컨텍스트(가장 오래된 인스턴스화 컨텍스트)가
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\__msvc_iter_core.hpp(121,87):
+  	컴파일되는 클래스 템플릿 인스턴스화 'std::incrementable_traits<stdext::checked_array_iterator<unsigned char *>>'에 대한 참조를 확인하세요.
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\__msvc_iter_core.hpp(99,29): error C4996: 'stdext::checked_array_iterator<unsigned char *>::difference_type': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+  (소스 파일 'RiotAPIManager.cpp'을(를) 컴파일하는 중)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xutility(1265,12): error C4996: 'stdext::checked_array_iterator<unsigned char *>::_Verify_offset': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+  (소스 파일 'RiotAPIManager.cpp'을(를) 컴파일하는 중)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xutility(1266,41): error C4996: 'stdext::checked_array_iterator<unsigned char *>::_Unwrapped': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+  (소스 파일 'RiotAPIManager.cpp'을(를) 컴파일하는 중)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xutility(1287,12): error C4996: 'stdext::checked_array_iterator<char *>::_Seek_to': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+  (소스 파일 'RiotAPIManager.cpp'을(를) 컴파일하는 중)
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xutility(1287,12):
+  템플릿 인스턴스화 컨텍스트(가장 오래된 인스턴스화 컨텍스트)가
+  	D:\Development_Repository\2024Capstone_league\Statistics_production_tools\packages\cpprestsdk.v142.2.10.15\build\native\include\cpprest\containerstream.h(404,14):
+  	컴파일되는 함수 템플릿 인스턴스화 '_OutIt std::copy<std::_String_iterator<std::_String_val<std::_Simple_types<_Elem>>>,stdext::checked_array_iterator<char *>>(_InIt,_InIt,_OutIt)'에 대한 참조를 확인하세요.
+          with
+          [
+              _OutIt=stdext::checked_array_iterator<char *>,
+              _Elem=char,
+              _InIt=std::_String_iterator<std::_String_val<std::_Simple_types<char>>>
+          ]
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xutility(4589,5):
+  	컴파일되는 함수 템플릿 인스턴스화 'void std::_Seek_wrapped<_OutIt,char*>(_Iter &,_UIter &&)'에 대한 참조를 확인하세요.
+          with
+          [
+              _OutIt=stdext::checked_array_iterator<char *>,
+              _Iter=stdext::checked_array_iterator<char *>,
+              _UIter=char *
+          ]
+  
+  코드를 생성하고 있습니다...
