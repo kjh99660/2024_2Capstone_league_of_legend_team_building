@@ -34,3 +34,4 @@
 # dev tooks
 *.ipch
 *.sdf
+python_work/
