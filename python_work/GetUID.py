@@ -3,7 +3,7 @@ import json
 import csv
 import time
 
-api_key = "RGAPI-edb31a91-d41e-4580-88c4-c62e93ec0f42"
+api_key = "KEY"
 header = {"X-Riot-Token" : api_key}
 url = "https://kr.api.riotgames.com/lol/summoner/v4/summoners/"
 request_time = 0

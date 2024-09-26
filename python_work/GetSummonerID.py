@@ -3,7 +3,7 @@ import json
 import csv
 import time
 
-api_key = "RGAPI-28a3a8ed-08af-43d0-b9be-3a7b9dc06f8e"
+api_key = "KEY"
 header = {"X-Riot-Token" : api_key}
 url = "https://kr.api.riotgames.com/lol/league/v4/entries/RANKED_FLEX_SR/DIAMOND/I?page=1"
 request_time = 0
