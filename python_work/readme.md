@@ -404,4 +404,20 @@ legendaryItemUsed field는 원본 정보가 integer(4자리 item 코드)의 list
 |primary_perk3_value1|INT(11)YES| |
 |primary_perk3_value2|INT(11)YES| |
 |primary_perk3_value3|INT(11)YES| |
-|primary_pe다
+|primary_perk4|INT(11)YES| |
+|primary_perk4_value1|INT(11)YES| |
+|primary_perk4_value2|INT(11)YES| |
+|primary_perk4_value3|INT(11)YES| |
+|sub_perk1|INT(11)YES| |
+|sub_perk1_value1|INT(11)YES| |
+|sub_perk1_value2|INT(11)YES| |
+|sub_perk1_value3|INT(11)YES| |
+|sub_perk2|INT(11)YES| |
+|sub_perk2_value1|INT(11)YES| |
+|sub_perk2_value2|INT(11)YES| |
+|sub_perk2_value3|INT(11)YES| |
+
+제약 조건
+|조건 이름|유형|필드 이름|설명|
+|------|-----|--------|-------|
+|PK_numbering_puuId|Primary Key|numbering, puuId|기본키|
