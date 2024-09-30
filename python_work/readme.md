@@ -421,3 +421,10 @@ legendaryItemUsed field는 원본 정보가 integer(4자리 item 코드)의 list
 |조건 이름|유형|필드 이름|설명|
 |------|-----|--------|-------|
 |PK_numbering_puuId|Primary Key|numbering, puuId|기본키|
+
+### 당황했던 점
+1. 칼럼 헤더 없음
+2. 정보에 정수 배열이 포함됨
+3. cav파일 정보에 Api 문서에 없는 부분이 있음
+4. 내 생각보다 Feature 개 많음
+5. numbering이랑 puuid로 복합 primary key 설정했는데, 경기에 봇이 끼어있음(봇은 puuid가 고유값이 아닌 그냥 BOT으로 되어 있음)
