@@ -27,7 +27,7 @@
 |consumablesPurchased|INT(11)|YES| |
 |damageDealtToBuildings|INT(11)|YES| |
 |damageDealtToObjectives|INT(11)|YES| |
-|damageDealtToTurrets|INT(11)|YES| |
+|damageDealtToTurrets|INT(11)|YES|참가자가 터렛에 입힌 데미지|
 |damageSelfMitigated|INT(11)|YES| |
 |dangerPings|INT(11)|YES| |
 |deaths|INT(11)|YES| |
@@ -60,11 +60,11 @@
 |item6|INT(11)|YES| |
 |itemsPurchased|INT(11)|YES| |
 |killingSprees|INT(11)|YES| |
-|kills|INT(11)|YES| |
+|kills|INT(11)|YES|참가자의 킬 수|
 |lane|VARCHAR(255)|YES| |
 |largestCriticalStrike|INT(11)|YES| |
 |largestKillingSpree|INT(11)|YES| |
-|largestMultiKill|INT(11)|YES| |
+|largestMultiKill|INT(11)|YES|참가자의 최대 멀티 킬 수|
 |longestTimeSpentLiving|INT(11)|YES| |
 |magicDamageDealt|INT(11)|YES| |
 |magicDamageDealtToChampions|INT(11)|YES| |
@@ -95,7 +95,7 @@
 |quadraKills|INT(11)|YES| |
 |riotIdGameName|VARCHAR(255)|YES| |
 |riotIdTagline|VARCHAR(255)|YES| |
-|role|VARCHAR(255)|YES| |
+|role|VARCHAR(255)|YES|참가자의 line|
 |sightWardsBoughtInGame|INT(11)|YES| |
 |spell1Casts|INT(11)|YES| |
 |spell2Casts|INT(11)|YES| |
@@ -122,7 +122,7 @@
 |totalEnemyJungleMinionsKilled|INT(11)|YES| |
 |totalHeal|INT(11)|YES| |
 |totalHealsOnTeammates|INT(11)|YES| |
-|totalMinionsKilled|INT(11)|YES| |
+|totalMinionsKilled|INT(11)|YES|참가자의 미니언 총 킬 수|
 |totalTimeCCDealt|INT(11)|YES| |
 |totalTimeSpentDead|INT(11)|YES| |
 |totalUnitsHealed|INT(11)|YES| |
@@ -211,7 +211,7 @@
 |epicMonsterKillsWithin30SecondsOfSpawn|INT(11)|YES| |
 |epicMonsterSteals|INT(11)|YES| |
 |epicMonsterStolenWithoutSmite|INT(11)|YES| |
-|firstTurretKilled|INT(11)|YES| |
+|firstTurretKilled|INT(11)|YES|포블?|
 |fistBumpParticipation|INT(11)|YES| |
 |flawlessAces|INT(11)|YES| |
 |fullTeamTakedown|INT(11)|YES| |
@@ -269,7 +269,7 @@
 |skillshotsHit|INT(11)|YES| |
 |snowballsHit|INT(11)|YES| |
 |soloBaronKills|INT(11)|YES| |
-|soloKills|INT(11)|YES| |
+|soloKills|INT(11)|YES|참가자의 솔로 킬 수|
 |stealthWardsPlaced|INT(11)|YES| |
 |survivedSingleDigitHpCount|INT(11)|YES| |
 |survivedThreeImmobilizesInFight|INT(11)|YES| |
@@ -300,7 +300,7 @@
 |junglerKillsEarlyJungle|INT(11)|YES| |
 |killsOnLanersEarlyJungleAsJungler|INT(11)|YES| |
 |teleportTakedowns|INT(11)|YES| |
-|firstTurretKilledTime|FLOAT|YES| |
+|firstTurretKilledTime|FLOAT|YES|포블? 했을 당시 시간(ms)|
 |shortestTimeToAceFromFirstTakedown|FLOAT|YES| |
 |soloTurretsLategame|INT(11)|YES| |
 |earliestDragonTakedown|FLOAT|YES| |
