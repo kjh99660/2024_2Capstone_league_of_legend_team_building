@@ -240,7 +240,7 @@
 |laneMinionsFirst10Minutes|INT(11)|YES| |
 |laningPhaseGoldExpAdvantage|INT(11)|YES| |
 |legendaryCount|INT(11)|YES| |
-|legendaryItemUsed|VARCHAR(255)|YES| |
+|legendaryItemUsed|VARCHAR(255)|YES|참가자가 사용한 전설 아이템의 item code 목록|
 |lostAnInhibitor|INT(11)|YES| |
 |maxCsAdvantageOnLaneOpponent|FLOAT|YES| |
 |maxKillDeficit|INT(11)|YES| |
