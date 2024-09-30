@@ -5,31 +5,13 @@ try:
     # MySQL 연결 설정
     connection = mysql.connector.connect(
         host='localhost',
-        database='match5_data_set',
-        user='root',
-        password='@pas3$89+0D'
+        database='[database_name]',
+        user='[user_name]',
+        password='[password]'
     )
 
     if connection.is_connected():
         cursor = connection.cursor()
-
-        # 경기 길이와 참가자 id가 담긴 테이블
-        create_parent_table_query = '''
-        CREATE TABLE match (
-            numbering INT(11) NOT NULL PRIMARY KEY,
-            Duration INT(11),
-            puuId1 VARCHAR(255),
-            puuId2 VARCHAR(255),
-            puuId3 VARCHAR(255),
-            puuId4 VARCHAR(255),
-            puuId5 VARCHAR(255),
-            puuId6 VARCHAR(255),
-            puuId7 VARCHAR(255),
-            puuId8 VARCHAR(255),
-            puuId9 VARCHAR(255),
-            puuId10 VARCHAR(255),
-        );
-        '''
 
         # 경기 넘버, 길이 및 참가자 상세 정보 테이블
         create_match_participant = '''
