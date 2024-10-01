@@ -386,7 +386,7 @@ try:
             sub_perk2_value1 INT(11),
             sub_perk2_value2 INT(11),
             sub_perk2_value3 INT(11),
-            PRIMARY KEY (numbering, puuId, description)
+            PRIMARY KEY (numbering, puuId)
         );
         '''
 
