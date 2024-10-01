@@ -24,16 +24,20 @@ def GetMatchInfo(matchid):
     global numbering
     for i in range(len(data)):
         print(numbering, " : " ,data["info"]["gameId"])#gameId
-        writer.writerow([numbering, data["info"]["gameDuration"], data["info"]["participants"][0]], data["info"]["participants"][1], data["info"]["participants"][2], data["info"]["participants"][3], data["info"]["participants"][4]
-        , data["info"]["participants"][5], data["info"]["participants"][6], data["info"]["participants"][7], data["info"]["participants"][8], data["info"]["participants"][9])
-        numbering += 1
+        try:
+            writer.writerow([numbering, data["info"]["gameDuration"], data["info"]["participants"][0], data["info"]["participants"][1], data["info"]["participants"][2], data["info"]["participants"][3], data["info"]["participants"][4]
+            , data["info"]["participants"][5], data["info"]["participants"][6], data["info"]["participants"][7], data["info"]["participants"][8], data["info"]["participants"][9]])
+            numbering += 1
+        except:
+            print("Error")
+            continue
 
     return 
 
 
 #####################################################
 file = open("MatchID.csv", "r")
-file2 = open("MatchInfo.csv", "w", newline="")
+file2 = open("MatchInfo.csv", "w", newline="", encoding="utf-8")
 reader = csv.reader(file)
 writer = csv.writer(file2)
 
