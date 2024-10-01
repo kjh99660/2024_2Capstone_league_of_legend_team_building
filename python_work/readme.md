@@ -95,7 +95,7 @@
 |quadraKills|INT(11)|YES| |
 |riotIdGameName|VARCHAR(255)|YES| |
 |riotIdTagline|VARCHAR(255)|YES| |
-|role|VARCHAR(255)|YES|참가자의 line|
+|role|VARCHAR(255)|YES||
 |sightWardsBoughtInGame|INT(11)|YES| |
 |spell1Casts|INT(11)|YES| |
 |spell2Casts|INT(11)|YES| |
@@ -111,7 +111,7 @@
 |summonerName|VARCHAR(255)|YES| |
 |teamEarlySurrendered|BOOL|YES| |
 |teamId|INT(11)|YES| |
-|teamPosition|VARCHAR(255)|YES| |
+|teamPosition|VARCHAR(255)|YES|참가자의 line|
 |timeCCingOthers|INT(11)|YES| |
 |timePlayed|INT(11)|YES| |
 |totalAllyJungleMinionsKilled|INT(11)|YES| |
