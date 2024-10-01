@@ -13,25 +13,25 @@
 |Duration|INT(11)|YES|경기 시간(ms)|
 |puuId|VARCHAR(255)|NO|기본 키, 참가자의 암호된 id|
 |allInPings|INT(11)|YES| |
-|assistMePings|INT(11)|YES| |
-|assists|INT(11)|YES| |
-|baronKills|INT(11)|YES| |
-|basicPings|INT(11)|YES| |
+|assistMePings|INT(11)|YES|도움 핑|
+|assists|INT(11)|YES|어시스트 수|
+|baronKills|INT(11)|YES|바론 킬 수|
+|basicPings|INT(11)|YES|일반 핑|
 |bountyLevel|INT(11)|YES| |
 |champExperience|INT(11)|YES| |
-|champLevel|INT(11)|YES| |
-|championId|INT(11)|YES| |
-|championName|VARCHAR(255)|YES| |
+|champLevel|INT(11)|YES|챔피언 레벨|
+|championId|INT(11)|YES|챔피언 ID 출시순|
+|championName|VARCHAR(255)|YES|챔피언 이름|
 |championTransform|INT(11)|YES| |
 |commandPings|INT(11)|YES| |
 |consumablesPurchased|INT(11)|YES| |
-|damageDealtToBuildings|INT(11)|YES| |
+|damageDealtToBuildings|INT(11)|YES|건물에 입힌 피해|
 |damageDealtToObjectives|INT(11)|YES| |
-|damageDealtToTurrets|INT(11)|YES|참가자가 터렛에 입힌 데미지|
+|damageDealtToTurrets|INT(11)|YES|참가자가 포탑에 입힌 데미지|
 |damageSelfMitigated|INT(11)|YES| |
-|dangerPings|INT(11)|YES| |
-|deaths|INT(11)|YES| |
-|detectorWardsPlaced|INT(11)|YES| |
+|dangerPings|INT(11)|YES|위험 핑|
+|deaths|INT(11)|YES|죽은 횟수|
+|detectorWardsPlaced|INT(11)|YES|와드 찾음 핑|
 |doubleKills|INT(11)|YES| |
 |dragonKills|INT(11)|YES| |
 |eligibleForProgression|BOOL|YES| |
@@ -48,10 +48,10 @@
 |goldSpent|INT(11)|YES| |
 |holdPings|INT(11)|YES| |
 |individualPosition|VARCHAR(255)|YES| |
-|inhibitorKills|INT(11)|YES| |
-|inhibitorTakedowns|INT(11)|YES| |
+|inhibitorKills|INT(11)|YES|억제기 파괴 수|
+|inhibitorTakedowns|INT(11)|YES|억제기 막타 수|
 |inhibitorsLost|INT(11)|YES| |
-|item0|INT(11)|YES| |
+|item0|INT(11)|YES|각 아이템 칸에 아이템 정보|
 |item1|INT(11)|YES| |
 |item2|INT(11)|YES| |
 |item3|INT(11)|YES| |
@@ -59,9 +59,9 @@
 |item5|INT(11)|YES| |
 |item6|INT(11)|YES| |
 |itemsPurchased|INT(11)|YES| |
-|killingSprees|INT(11)|YES| |
+|killingSprees|INT(11)|YES|연속 킬 수|
 |kills|INT(11)|YES|참가자의 킬 수|
-|lane|VARCHAR(255)|YES| |
+|lane|VARCHAR(255)|YES|TOP JUNGLE MID BOTTOM SUPPORT으로 표시|
 |largestCriticalStrike|INT(11)|YES| |
 |largestKillingSpree|INT(11)|YES| |
 |largestMultiKill|INT(11)|YES|참가자의 최대 멀티 킬 수|
