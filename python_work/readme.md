@@ -10,7 +10,7 @@
 |필드 이름|테이터 타입|null 여부|설명|
 |------|----|---|---------|
 |numbering|INT(11)|NO|기본 키, 경기 넘버|
-|Duration|INT(11)|YES|경기 시간(ms)|
+|Duration|INT(11)|YES|경기 시간(s)|
 |puuId|VARCHAR(255)|NO|기본 키, 참가자의 암호된 id|
 |allInPings|INT(11)|YES| |
 |assistMePings|INT(11)|YES|도움 핑|
@@ -300,7 +300,7 @@
 |junglerKillsEarlyJungle|INT(11)|YES| |
 |killsOnLanersEarlyJungleAsJungler|INT(11)|YES| |
 |teleportTakedowns|INT(11)|YES| |
-|firstTurretKilledTime|FLOAT|YES|포블? 했을 당시 시간(ms)|
+|firstTurretKilledTime|FLOAT|YES|포블? 했을 당시 시간(s)|
 |shortestTimeToAceFromFirstTakedown|FLOAT|YES| |
 |soloTurretsLategame|INT(11)|YES| |
 |earliestDragonTakedown|FLOAT|YES| |
