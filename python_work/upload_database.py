@@ -1,5 +1,7 @@
+import sys
 import csv
 import json
+import argparse
 import mysql.connector
 from mysql.connector import Error
 
@@ -44,6 +46,12 @@ def get_match_participant_query_data(entire_col, index_list, numbering, duration
         insert_data.append(data)
         insert_query1 += ", " + index
         insert_query2 += ", %s"
+
+    if masterChampion != None:
+        insert_query1 += ", masterChampion"
+        insert_query2 += ", %s"
+        insert_data.append(masterChampion)
+    
     insert_query1 += ")"
     insert_query2 += ")"
     insert_query = insert_query1 + insert_query2
@@ -248,14 +256,18 @@ def get_perk_style_query_data(entire_col, numbering, puuId):
     return insert_query, insert_data
 
 def get_all_index_list(csv_file_path):
-    f = open(csv_file_path,'r')
+    f = open(csv_file_path,'r', encoding='utf-8', errors='ignore')
     reader = csv.reader(f)
     row = next(reader)
     
     line = row[2].replace(source[0], destination[0])
     line = line.replace(source[1], destination[1])
     line = line.replace(source[2], destination[2])
-    entire_col = json.loads(line)
+    line = line.replace(source[3], destination[3])
+    try:
+        entire_col = json.loads(line)
+    except json.JSONDecodeError as e:
+        print(f"JSONDecodeError: {e}")
     
     match_participant_index = get_index_list(entire_col, match_participant_stop)
     challenges_index = get_index_list(entire_col["challenges"], challenges_stop)
@@ -267,7 +279,7 @@ def get_all_index_list(csv_file_path):
     return [match_participant_index, challenges_index, missions_index, stat_perks_index]
 
 def entire_data_insert(csv_file_path):
-    index_lists = get_all_index_list(csv_file_path)
+    index_lists = get_all_index_list(csv_file_path, encoding='utf-8', errors='ignore')
 
     f = open(csv_file_path,'r')
     reader = csv.reader(f)
@@ -289,11 +301,10 @@ def entire_data_insert(csv_file_path):
             data = None
 
             for col in row[2:]:
-                source = ["\'", ": True", ": False"]
-                destination = ["\"", ": true", ": false"]
                 line = col.replace(source[0], destination[0])
                 line = line.replace(source[1], destination[1])
                 line = line.replace(source[2], destination[2])
+                line = line.replace(source[3], destination[3])
                 entire_col = json.loads(line)
                 
                 puuId = entire_col["puuid"]
@@ -331,11 +342,102 @@ def entire_data_insert(csv_file_path):
     mysqlDbClose(connection)
     f.close()
 
-source = ["\'", ": True", ": False"]
-destination = ["\"", ": true", ": false"]
-match_participant_stop = ["challenges", "missions", "perks", "puuid"]
-challenges_stop = ["legendaryItemUsed"]
-missions_stop = []
-perk_stats_stop = []
+def master_data_insert(csv_file_path):
+    index_lists = get_all_index_list(csv_file_path)
 
-entire_data_insert("path_of_csv_file")
+    f = open(csv_file_path,'r', encoding='utf-8', errors='ignore')
+    reader = csv.reader(f)
+
+    host = 'localhost'
+    database = 'match5_data_set'
+    user = 'root'
+    password = '@pas3$89+0D'
+    connection = mysqlDbConnection(host, database, user, password)
+
+    numbering = 100000
+    with open('match-numbering.txt', 'r') as f:
+        numbering = int(f.read())
+
+    if connection.is_connected():
+        cursor = connection.cursor()
+
+        for row in reader:
+            masterChampion = row[0]
+            duration = row[1]
+            puuId = None
+            data = None
+
+            line = row[2].replace(source[0], destination[0])
+            line = line.replace(source[1], destination[1])
+            line = line.replace(source[2], destination[2])
+            line = line.replace(source[3], destination[3])
+            entire_col = json.loads(line)
+                
+            puuId = entire_col["puuid"]
+
+            # matchParticipant 테이블에 데이터 insert 
+            insert_query, insert_data = get_match_participant_query_data(entire_col, index_lists[0], numbering, duration, puuId, masterChampion)
+            cursor.execute(insert_query, tuple(insert_data))
+            #print("matchParticipant 데이터 삽입 완료.")
+
+            # challanges 테이블에 데이터 insert 
+            insert_query, insert_data = get_challanges_query_data(entire_col, index_lists[1], numbering, puuId)
+            cursor.execute(insert_query, tuple(insert_data))
+            #print("challenges 데이터 삽입 완료.")
+
+            # missions 테이블에 데이터 insert 
+            insert_query, insert_data = get_missions_query_data(entire_col, index_lists[2], numbering, puuId)
+            cursor.execute(insert_query, tuple(insert_data))
+            #print("missions 데이터 삽입 완료.")
+
+            # perkStats 테이블에 데이터 insert 
+            insert_query, insert_data = get_perk_stats_query_data(entire_col, index_lists[3], numbering, puuId)
+            cursor.execute(insert_query, tuple(insert_data))
+            #print("perkStats 데이터 삽입 완료.")
+
+            # perkStyle 테이블에 데이터 insert 
+            insert_query, insert_data = get_perk_style_query_data(entire_col, numbering, puuId)
+            cursor.execute(insert_query, tuple(insert_data))
+            #print("perkStyle 데이터 삽입 완료.")
+
+            numbering += 1
+
+        # 변경사항 저장
+        connection.commit()
+    mysqlDbClose(connection)
+    f.close()
+
+    with open('match-numbering.txt', 'w') as f:
+        f.write(str(numbering))
+
+if __name__ == '__main__':
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        "-p",
+        "--path",
+        type=str,
+        default="",
+        help="path of csv file",
+    )
+    parser.add_argument(
+        "-m",
+        "--mode",
+        type=int,
+        default=0,
+        help="mode type (0: entire participant data, 1: master's participant data)",
+    )
+    args = parser.parse_args()
+
+    assert args.path != ""
+
+    source = ["\'", ": True", ": False", "?,"]
+    destination = ["\"", ": true", ": false", "\","]
+    match_participant_stop = ["challenges", "missions", "perks", "puuid"]
+    challenges_stop = ["legendaryItemUsed"]
+    missions_stop = []
+    perk_stats_stop = []
+
+    if args.mode == 0:
+        sys.exit(entire_data_insert(args.path))
+    elif args.mode == 1:
+        sys.exit(master_data_insert(args.path))
