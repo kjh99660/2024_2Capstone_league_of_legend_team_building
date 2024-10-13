@@ -161,7 +161,6 @@ try:
             playerScore11 INT(11),
             baitPings INT(11),
             riotIdName VARCHAR(255),
-            masterChampion VARCHAR(100) NOT NULL DEFAULT 'NONE',
             PRIMARY KEY (numbering, puuId)
         );
         '''
