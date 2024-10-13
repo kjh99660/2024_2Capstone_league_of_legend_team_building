@@ -362,7 +362,7 @@ def master_data_insert(csv_file_path):
         cursor = connection.cursor()
 
         for row in reader:
-            masterChampion = row[0]
+            #masterChampion = row[0]
             duration = row[1]
             puuId = None
             data = None
@@ -376,7 +376,7 @@ def master_data_insert(csv_file_path):
             puuId = entire_col["puuid"]
 
             # matchParticipant 테이블에 데이터 insert 
-            insert_query, insert_data = get_match_participant_query_data(entire_col, index_lists[0], numbering, duration, puuId, masterChampion)
+            insert_query, insert_data = get_match_participant_query_data(entire_col, index_lists[0], numbering, duration, puuId)
             cursor.execute(insert_query, tuple(insert_data))
             #print("matchParticipant 데이터 삽입 완료.")
 
