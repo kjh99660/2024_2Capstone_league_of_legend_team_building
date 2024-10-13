@@ -154,6 +154,7 @@
 |playerScore11|INT(11)|YES| |
 |baitPings|INT(11)|YES| |
 |riotIdName|VARCHAR(255)|YES| |
+|masterChampion|VARCHAR(100)|NO|해당 유저가 어떤 챔피언의 장인 유저인지 나타내는 column|
 
 제약 조건
 |조건 이름|유형|필드 이름|설명|
@@ -390,32 +391,32 @@ legendaryItemUsed field는 원본 정보가 integer(4자리 item 코드)의 list
 |------|----|---|---------|
 |numbering|INT(11)|NO|기본 키, 경기 넘버|
 |puuId|VARCHAR(255)|NO|기본 키, 참가자의 암호된 id|
-|primary_style|INT(11)YES| |
-|sub_style|INT(11)YES| |
-|primary_perk1|INT(11)YES| |
-|primary_perk1_value1|INT(11)YES| |
-|primary_perk1_value2|INT(11)YES| |
-|primary_perk1_value3|INT(11)YES| |
-|primary_perk2|INT(11)YES| |
-|primary_perk2_value1|INT(11)YES| |
-|primary_perk2_value2|INT(11)YES| |
-|primary_perk2_value3|INT(11)YES| |
-|primary_perk3|INT(11)YES| |
-|primary_perk3_value1|INT(11)YES| |
-|primary_perk3_value2|INT(11)YES| |
-|primary_perk3_value3|INT(11)YES| |
-|primary_perk4|INT(11)YES| |
-|primary_perk4_value1|INT(11)YES| |
-|primary_perk4_value2|INT(11)YES| |
-|primary_perk4_value3|INT(11)YES| |
-|sub_perk1|INT(11)YES| |
-|sub_perk1_value1|INT(11)YES| |
-|sub_perk1_value2|INT(11)YES| |
-|sub_perk1_value3|INT(11)YES| |
-|sub_perk2|INT(11)YES| |
-|sub_perk2_value1|INT(11)YES| |
-|sub_perk2_value2|INT(11)YES| |
-|sub_perk2_value3|INT(11)YES| |
+|primary_style|INT(11)|YES| |
+|sub_style|INT(11)|YES| |
+|primary_perk1|INT(11)|YES| |
+|primary_perk1_value1|INT(11)|YES| |
+|primary_perk1_value2|INT(11)|YES| |
+|primary_perk1_value3|INT(11)|YES| |
+|primary_perk2|INT(11)|YES| |
+|primary_perk2_value1|INT(11)|YES| |
+|primary_perk2_value2|INT(11)|YES| |
+|primary_perk2_value3|INT(11)|YES| |
+|primary_perk3|INT(11)|YES| |
+|primary_perk3_value1|INT(11)|YES| |
+|primary_perk3_value2|INT(11)|YES| |
+|primary_perk3_value3|INT(11)|YES| |
+|primary_perk4|INT(11)|YES| |
+|primary_perk4_value1|INT(11)|YES| |
+|primary_perk4_value2|INT(11)|YES| |
+|primary_perk4_value3|INT(11)|YES| |
+|sub_perk1|INT(11)|YES| |
+|sub_perk1_value1|INT(11)|YES| |
+|sub_perk1_value2|INT(11)|YES| |
+|sub_perk1_value3|INT(11)|YES| |
+|sub_perk2|INT(11)|YES| |
+|sub_perk2_value1|INT(11)|YES| |
+|sub_perk2_value2|INT(11)|YES| |
+|sub_perk2_value3|INT(11)|YES| |
 
 제약 조건
 |조건 이름|유형|필드 이름|설명|
