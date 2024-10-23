@@ -3,7 +3,7 @@ import json
 import csv
 import time
 
-api_key = "KEY"
+api_key = "RGAPI-c677adfe-10f4-4d92-8169-458006d77916"
 header = {"X-Riot-Token" : api_key}
 url = "https://kr.api.riotgames.com/lol/summoner/v4/summoners/"
 request_time = 0
@@ -20,12 +20,13 @@ def GetPuUID(summonerID):
     else:
         print("Request failed with status code:", response.status_code)
     
+    time.sleep(0.1)
     return data["puuid"]
 
 
 #####################################################
-file = open("SummonerID.csv", "r")
-file2 = open("PUUID.csv", "w", newline="")
+file = open("GoldSummonerID.csv", "r")
+file2 = open("GoldPUUID.csv", "w", newline="")
 reader = csv.reader(file)
 writer = csv.writer(file2)
 
@@ -44,7 +45,7 @@ for line in reader:
     numbering += 1
     request_time += 1
     end = time.time()
-    if(request_time == 20 and end - start < 120):
+    if(request_time == 90 and end - start < 120):
         print("Waiting for ", 120 - (end - start) ," seconds")
         time.sleep(120 - (end - start))
         request_time = 0

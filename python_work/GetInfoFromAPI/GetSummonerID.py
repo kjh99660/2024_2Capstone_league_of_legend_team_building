@@ -5,13 +5,12 @@ import time
 
 api_key = "KEY"
 header = {"X-Riot-Token" : api_key}
-url = "https://kr.api.riotgames.com/lol/league/v4/entries/RANKED_FLEX_SR/DIAMOND/I?page=1"
 request_time = 0
 
-def GetSummonerID(tier, division):
+def GetSummonerID(tier, division, page):
     queue = "RANKED_FLEX_SR"
 
-    url = "https://kr.api.riotgames.com/lol/league/v4/entries/" + queue + "/" + tier + "/" + division + "?page=1"
+    url = "https://kr.api.riotgames.com/lol/league/v4/entries/" + queue + "/" + tier + "/" + division + "?page=" + str(page)
 
     response = requests.get(url, headers=header)
 
@@ -29,7 +28,7 @@ def GetSummonerID(tier, division):
 
 
 #####################################################
-file = open("SummonerID.csv", "w", newline="")
+file = open("GoldSummonerID.csv", "w", newline="")
 
 writer = csv.writer(file)
 writer.writerow(["summonerId"])
@@ -38,9 +37,9 @@ tier = {"DIAMOND", "PLATINUM", "GOLD", "SILVER", "BRONZE", "IRON"}
 division = {"I", "II", "III", "IV"}
 
 start = time.time()
-for i in tier:
+for i in range(2, 5):
     for j in division:
-        GetSummonerID(i, j)
+        GetSummonerID("GOLD", j, i)
         request_time += 1
         middle = time.time()
         gap = middle - start

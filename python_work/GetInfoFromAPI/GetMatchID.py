@@ -4,14 +4,14 @@ import time
 
 #쿼리 횟수 2분 당 100회 /초당 20회 제한
 
-api_key = "KEY"
+api_key = ""
 header = {"X-Riot-Token" : api_key}
 url = "https://asia.api.riotgames.com/lol/match/v5/matches/by-puuid/"
 request_time = 0
 numbering = 1
 
 def GetMatchID(puuid):
-    url = "https://asia.api.riotgames.com/lol/match/v5/matches/by-puuid/" + puuid + "/ids?start=0&count=20"
+    url = "https://asia.api.riotgames.com/lol/match/v5/matches/by-puuid/" + puuid + "/ids?type=ranked&start=0&count=40"
 
     response = requests.get(url, headers=header)
 
@@ -31,8 +31,8 @@ def GetMatchID(puuid):
 
 
 #####################################################
-file = open("PUUID.csv", "r")
-file2 = open("MatchID.csv", "w", newline="")
+file = open("GoldPUUID.csv", "r")
+file2 = open("GoldMatchID.csv", "w", newline="")
 reader = csv.reader(file)
 writer = csv.writer(file2)
 
