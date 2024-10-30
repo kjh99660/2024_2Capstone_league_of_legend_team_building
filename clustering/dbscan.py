@@ -10,12 +10,15 @@ from sklearn.neighbors import NearestNeighbors
 from sklearn.cluster import DBSCAN
 from sklearn.manifold import TSNE
 
-def dbscan(csv_path, eps):
+def dbscan(csv_path, eps, minpts):
     df = pd.read_csv(csv_path, header=0, index_col=0)
 
-    min_pts = round(np.log(len(df)))
+    if minpts == 0:
+        minpts = round(np.log(len(df)))
 
-    model = DBSCAN(eps=eps, min_samples=min_pts)
+    print(f'default minpts: {minpts}')
+
+    model = DBSCAN(eps=eps, min_samples=minpts)
     model_results = model.fit_predict(df)
 
     # 결과 저장
@@ -75,10 +78,17 @@ if __name__ == '__main__':
         default=0,
         help="epsilon value for dbscan clustering",
     )
+    parser.add_argument(
+        "-n",
+        "--minpts",
+        type=int,
+        default=0,
+        help="min points for dbscan clustering",
+    )
     args = parser.parse_args()
     assert args.path != ""
 
     if args.mode == 0:
-        sys.exit(dbscan(args.path, args.epsilon))
+        sys.exit(dbscan(args.path, args.epsilon, args.minpts))
     elif args.mode == 1:
         sys.exit(show_kdist(args.path))
