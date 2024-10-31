@@ -74,7 +74,7 @@ for (champion, line), data in data_by_champion_line.items():
 
     # 데이터 개수 추가
     row.append(count)
-
+    if count < 50 or line == "Invalid": continue
     # 계산된 데이터를 CSV 파일에 작성
     writer.writerow(row)
 

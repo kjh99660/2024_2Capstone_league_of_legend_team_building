@@ -34,16 +34,31 @@ for lines in reader:
     row_data = []
     row_data.append(lines[0])
     for key in key_list:
-        # "challenges"에서 값을 찾고, 없으면 최상위 키에서 값을 찾음
-        value = challenges.get(key, json_data.get(key, 0))
-        # longestTimeSpentLiving 값이 0이면 게임 길이로 대체
+        if "+" in key:
+                first_key, second_key = key.split("+")
+                # "challenges"에서 값을 찾고, 없으면 최상위 키에서 값을 찾음
+                value = challenges.get(first_key, json_data.get(first_key, 0)) + challenges.get(second_key, json_data.get(second_key, 0))
+        elif "/" in key:
+            first_key, second_key = key.split("/")
+            # 분할된 값이 0이 아닌 경우에만 나눗셈 수행
+            denominator = challenges.get(second_key, json_data.get(second_key, 0))
+            if denominator != 0:
+                value = challenges.get(first_key, json_data.get(first_key, 0)) / denominator
+            else:
+                value = 0  # 나눗셈 불가 시 기본값 설정
+        else:
+            # "challenges"에서 값을 찾고, 없으면 최상위 키에서 값을 찾음
+            value = challenges.get(key, json_data.get(key, 0))
+
+        # 특정 키에 대한 추가 조건 처리
+        if key == "teamPosition" and value == "":
+            value = json_data.get("individualPosition", 0)
         if key == "longestTimeSpentLiving" and value == 0:
             value = gamelength
         if value == 0:
             value = json_data.get(key, 0)
-            row_data.append(value)
-        else:
-            row_data.append(value)  
+    
+        row_data.append(value)
         
     
 
