@@ -1,4 +1,4 @@
-from flask import Flask, jsonify, make_response
+from flask import Flask, request, jsonify, make_response
 from riot_api import getUserAccount, getMatchIDByPuuid, getMatchByMatchId
 import csv
 
@@ -99,10 +99,10 @@ def getRecommandInfo():
             'score' : 0
         }
     }
-    region = flask.request.args.get('region')
-    nickname = flask.request.args.get('nickname')
+    region = request.args.get('region')
+    nickname = request.args.get('nickname')
 
-    line = flask.request.args.get('line')
+    line = request.args.get('line')
     
     split_list = nickname.split('#')
     if len(split_list) != 2:
