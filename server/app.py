@@ -86,7 +86,7 @@ def getCharacterAndChampion(match_info_list):
 
     return characteristics, champion_name, score
 
-@app.route('/example', methods=['GET'])
+@app.route('/api/analyze', methods=['GET'])
 def getRecommandInfo():
     data = {
         'characteristics':{
