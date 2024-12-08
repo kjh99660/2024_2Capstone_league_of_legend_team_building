@@ -170,6 +170,7 @@ def getRecommandInfo():
     max_recommend = 20
 
     data = {
+        'method': '',
         'characteristics':{
             'aggression': -2, #공격성 : 1, 0, -1 (세분류 : 높음, 중간, 낮음)
             'roamness': -2, #로밍성 : 1, 0, -1
@@ -201,6 +202,7 @@ def getRecommandInfo():
         return make_response(jsonify(data), 404)
     elif match_id_list == 0:
         champion_list, line_list = getBeginnerChampion(max_recommend)
+        data["method"] = "newbie"
         data["recommends"].update({"champion_list": champion_list, "line_list": line_list})
         print('경기기록이 50경기를 못넘음, 초보자 추천 루트')
         return make_response(jsonify(data), 200)
@@ -208,6 +210,7 @@ def getRecommandInfo():
     match_info_list, most_champion, most_line = getMatchByMatchId(region, puuid, match_id_list)
     if match_info_list == -1:
         champion_list, line_list = getBeginnerChampion(max_recommend)
+        data["method"] = "newbie"
         data["recommends"].update({"champion_list": champion_list, "line_list": line_list})
         print('많이 플레이한 챔피언-라인 기록이 기준치를 못넘김, 초보자 추천 루트')
         return make_response(jsonify(data), 200)
@@ -221,10 +224,12 @@ def getRecommandInfo():
             print('역할군 추천도 불가')
             return make_response(jsonify(data), 404)
         
+        data["method"] = "class"
         data["recommends"].update({"champion_list": champion_list, "line_list": line_list})
         print('성향에 맞는 챔피언이 없음, 역할군 기반 추천 루트')
         return make_response(jsonify(data), 200)
     
+    data["method"] = "analyze"
     data['characteristics'] = characteristics
     data["recommends"].update({"champion_list": champion_list, "line_list": line_list})
     print('성향에 맞는 챔피언을 찾음!')

@@ -715,9 +715,11 @@ fetch(url="/api/analyze?region=" + region + "&nickname=" + encodeURIComponent(ni
             "sup": []
         };
 
+        let method = data["method"];
         let recommends = data["recommends"];
         let champion_list = recommends["champion_list"];
         let line_list = recommends["line_list"];
+        
         for (let i = 0; i < champion_list.length; i++) {
             let champion = champion_list[i].toLowerCase();
             let line = line_list[i];
@@ -745,55 +747,62 @@ fetch(url="/api/analyze?region=" + region + "&nickname=" + encodeURIComponent(ni
 
         features = document.getElementById("features");
         features.innerHTML = '';
-        let chrtics = data["characteristics"];
-        
-        let text = "공격성";
-        let src = "";
-        switch (chrtics["aggression"]) {
-            case -1:
-                src = "/static/img/defensive.png";
-                break;
-            case 0:
-                src = "/static/img/neutral.png";
-                break;
-            case 1:
-                src = "/static/img/offensive.png";
-                break;
+
+        if (method == "newbie") {
+            features.appendChild(createFeature("초보자", "/static/img/newbie.png"));
+        } else if (method == "class") {
+            features.appendChild(createFeature("역할군", "/static/img/class.png"));
+        } else if (method == "analyze") {
+            let chrtics = data["characteristics"];
+            
+            let text = "공격성";
+            let src = "";
+            switch (chrtics["aggression"]) {
+                case -1:
+                    src = "/static/img/defensive.png";
+                    break;
+                case 0:
+                    src = "/static/img/neutral.png";
+                    break;
+                case 1:
+                    src = "/static/img/offensive.png";
+                    break;
+            }
+
+            features.appendChild(createFeature(text, src));
+
+            text = "로밍성";
+
+            switch (chrtics["roamness"]) {
+                case -1:
+                    src = "/static/img/lane.png";
+                    break;
+                case 0:
+                    src = "/static/img/neutral.png";
+                    break;
+                case 1:
+                    src = "/static/img/roam.png";
+                    break;
+            }
+
+            features.appendChild(createFeature(text, src));
+
+            text = "백도어";
+
+            switch (chrtics["backdoor"]) {
+                case -1:
+                    src = "/static/img/fight.png";
+                    break;
+                case 0:
+                    src = "/static/img/neutral.png";
+                    break;
+                case 1:
+                    src = "/static/img/backdoor.png";
+                    break;
+            }
+
+            features.appendChild(createFeature(text, src));
         }
-
-        features.appendChild(createFeature(text, src));
-
-        text = "로밍성";
-
-        switch (chrtics["roamness"]) {
-            case -1:
-                src = "/static/img/lane.png";
-                break;
-            case 0:
-                src = "/static/img/neutral.png";
-                break;
-            case 1:
-                src = "/static/img/roam.png";
-                break;
-        }
-
-        features.appendChild(createFeature(text, src));
-
-        text = "백도어";
-
-        switch (chrtics["backdoor"]) {
-            case -1:
-                src = "/static/img/fight.png";
-                break;
-            case 0:
-                src = "/static/img/neutral.png";
-                break;
-            case 1:
-                src = "/static/img/backdoor.png";
-                break;
-        }
-
-        features.appendChild(createFeature(text, src));
 
         select("all");
     }
