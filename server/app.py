@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify, make_response
+from flask import Flask, request, jsonify, make_response, render_template
 from riot_api import getUserAccount, getMatchIDByPuuid, getMatchByMatchId
 import csv
 from random import shuffle
@@ -6,6 +6,14 @@ from random import shuffle
 import time
 
 app = Flask(__name__)
+
+@app.route("/")
+def index():
+    return render_template('index.html')
+
+@app.route("/<region>/<nickname>")
+def recommend(region, nickname):
+    return render_template('recommend.html', region=region, nickname=nickname)
 
 with open("ChampionLineAverages_user.csv", mode="r", encoding="utf-8") as file:
     CHAMPION_LINE_DATA = [row for row in csv.reader(file)]
@@ -175,7 +183,7 @@ def getRecommandInfo():
 
     region = request.args.get('region')
     nickname = request.args.get('nickname')
-    
+
     split_list = nickname.split('#')
     if len(split_list) != 2:
         print('잘못된 요청')

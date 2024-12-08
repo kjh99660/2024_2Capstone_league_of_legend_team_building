@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button {
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+}
+
+.body {
+    background-color: #090C14;
+}
+
+.search {
+    margin: 100px auto 0 auto;
+    width: 800px;
+}
+
+.search_form {
+    display: flex;
+    height: 60px;
+    border-radius: 6px;
+    background-color: #1A1936;
+    align-items: center;
+}
+
+.search_form > div {
+    position: relative;
+    height: 40px;
+    display: block;
+}
+
+.search_upper {
+    line-height: 16px;
+    margin-bottom: 4px;
+}
+
+.search_lower {
+    line-height: 20px;
+}
+
+.region {
+    padding-left: 32px;
+    padding-right: 8px;
+    margin-right: 16px;
+}
+
+.region > small {
+    display: block;
+    width: 80px;
+    color: #8C99C3;
+}
+
+.nickname {
+    padding-left: 32px;
+    padding-right: 8px;
+    margin-right: 16px;
+}
+
+.nickname > label {
+    display: block;
+    color: #8C99C3;
+    font-size: small;
+}
+
+.nickname > input {
+    width: 560px;
+    display: block;
+    background-color: #1A1936;
+    color: white;
+    border: none;
+}
+
+.nickname > input::placeholder {
+    color: gray;
+}
+
+.nickname > input:focus {
+    outline: none;
+}
+
+.analysis_wrapper {
+    display: flex;
+    margin: 50px auto 0 auto;
+    width: 800px;
+    border-radius: 6px;
+    background-color: white;
+}
+
+.analyze > img {
+    display: block;
+    width: 30px;
+    height: 30px;
+    filter: invert();
+}
+
+.analysis {
+    display: flex;
+    gap: 30px;
+    margin: 10px auto;
+}
+
+.analysis_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    width: 100px;
+}
+
+.analysis_item > img {
+    width: 30px;
+    height: 30px;
+}
+
+.champion_container {
+    margin: 30px auto 0 auto;
+    width: 1200px;
+    border-radius: 6px;
+    background-color: lightsteelblue;
+}
+
+.position_wrapper {
+    display: flex;
+    padding: 10px 0 0 20px;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.champion_wrapper {
+    padding: 10px 0 0 0;
+}
+
+.champion_wrapper > ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 20px;
+    gap: 20px;
+}
+
+.champion_wrapper > ul > li {
+    position: relative;
+    display: block;
+    width: 98px;
+}
+
+.champion_item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.champion_item > img {
+    width: 98px;
+    height: 98px;
+}
+
+.champion_item > span {
+    font-size: 16px;
+}

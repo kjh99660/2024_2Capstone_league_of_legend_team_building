@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> 롤 챔피언 추천 </title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+    <script>
+        const region = "{{ region }}";
+        const nickname = "{{ nickname }}";
+    </script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</head>
+<body class="body">
+    <div class="search">
+        <form id = "search_form" class="search_form">
+            <div class="region">
+                <small class="search_upper">지역</small>
+                <small id="region" style="color: white;" class="search_lower">ASIA</small>
+            </div>
+            <div class="nickname">
+                <label class="search_upper">검색</label>
+                <input id="nickname" class="search_lower" type="text" placeholder="닉네임#태그">
+            </div>
+            <button class="analyze" type="submit">
+                <img src="{{ url_for('static', filename='img/search.png') }}">
+            </button>
+        </form>
+    </div>
+</body>
+</html>
