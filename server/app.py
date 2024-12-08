@@ -171,9 +171,9 @@ def getRecommandInfo():
 
     data = {
         'characteristics':{
-            'aggression': -1, #공격성 : 1, 0, -1 (세분류 : 높음, 중간, 낮음)
-            'roamness': -1, #로밍성 : 1, 0, -1
-            'backdoor': -1, #백도어? : 1, 0, -1
+            'aggression': -2, #공격성 : 1, 0, -1 (세분류 : 높음, 중간, 낮음)
+            'roamness': -2, #로밍성 : 1, 0, -1
+            'backdoor': -2, #백도어? : 1, 0, -1
         },
         'recommends':{
             'champion_list': [],
