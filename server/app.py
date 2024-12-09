@@ -143,7 +143,8 @@ def getChampionByRole(most_champion, most_line, max_recommend):
             target_role = role
             break
         index += 1
-    for row in reader:#조건문 뺴고 이어서
+    start = index
+    for row in CHAMPION_ROLE_DATA[start:]:#조건문 뺴고 이어서
         if target_role != row[2]:
             break
         index += 1
