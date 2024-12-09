@@ -755,53 +755,56 @@ fetch(url="/api/analyze?region=" + region + "&nickname=" + encodeURIComponent(ni
         } else if (method == "analyze") {
             let chrtics = data["characteristics"];
             
-            let text = "공격성";
-            let src = "";
+            let text1 = "공격성";
+            let src = ["/static/img/defensive.png", "/static/img/neutral.png", "/static/img/offensive.png"];
+            let text2 = ""
             switch (chrtics["aggression"]) {
                 case -1:
-                    src = "/static/img/defensive.png";
+                    text2 = "수비적";
                     break;
                 case 0:
-                    src = "/static/img/neutral.png";
+                    text2 = "중립적";
                     break;
                 case 1:
-                    src = "/static/img/offensive.png";
+                    text2 = "공격적";
                     break;
             }
 
-            features.appendChild(createFeature(text, src));
+            features.appendChild(createFeature2(text1, text2, src, chrtics["aggression"]));
 
-            text = "로밍성";
+            text1 = "로밍성";
+            src = ["/static/img/lane.png", "/static/img/neutral.png", "/static/img/roam.png"]
 
             switch (chrtics["roamness"]) {
                 case -1:
-                    src = "/static/img/lane.png";
+                    text2 = "라인전 위주";
                     break;
                 case 0:
-                    src = "/static/img/neutral.png";
+                    text2 = "중립적";
                     break;
                 case 1:
-                    src = "/static/img/roam.png";
+                    text2 = "로밍 위주";
                     break;
             }
 
-            features.appendChild(createFeature(text, src));
+            features.appendChild(createFeature2(text1, text2, src, chrtics["roamness"]));
 
-            text = "백도어";
+            text1 = "백도어";
+            src = ["/static/img/fight.png", "/static/img/neutral.png", "/static/img/backdoor.png"]
 
             switch (chrtics["backdoor"]) {
                 case -1:
-                    src = "/static/img/fight.png";
+                    text2 = "한타 위주";
                     break;
                 case 0:
-                    src = "/static/img/neutral.png";
+                    text2 = "중립적";
                     break;
                 case 1:
-                    src = "/static/img/backdoor.png";
+                    text2 = "백도어 위주";
                     break;
             }
 
-            features.appendChild(createFeature(text, src));
+            features.appendChild(createFeature2(text1, text2, src, chrtics["backdoor"]));
         }
 
         select("all");
@@ -820,6 +823,38 @@ function createFeature(text, src) {
 
     div.appendChild(span);
     div.appendChild(img);
+    
+    return div;
+}
+
+function createFeature2(text1, text2, src, selected) {
+    const div = document.createElement("div");
+    div.className = "analysis_item";
+
+    const span1 = document.createElement("span");
+    span1.textContent = text1;
+
+    const innerdiv = document.createElement("div");
+
+    console.log(src.length)
+    for (let i = 0; i < src.length; i++) {
+        const img = document.createElement("img");
+        img.src = src[i];
+        if (i == selected + 1) {
+            img.className = "selected_feature";
+        } else {
+            img.className = "nonselected_feature";
+        }
+    innerdiv.appendChild(img)
+    }
+
+    const span2 = document.createElement("span");
+    span2.textContent = text2;
+
+    div.appendChild(span1);
+    div.appendChild(innerdiv);
+    div.appendChild(span2);
+    
     return div;
 }
 

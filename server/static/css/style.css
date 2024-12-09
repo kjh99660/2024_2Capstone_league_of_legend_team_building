@@ -111,9 +111,27 @@ button {
     width: 100px;
 }
 
+.analysis_item > div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
 .analysis_item > img {
     width: 30px;
     height: 30px;
+}
+
+.selected_feature {
+    width: 30px;
+    height: 30px;
+}
+
+.nonselected_feature {
+    width: 30px;
+    height: 30px;
+    opacity: 25%;
 }
 
 .champion_container {

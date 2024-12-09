@@ -1,7 +1,7 @@
 import requests
 import time
 
-api_key = "the_key"
+api_key = "RGAPI-ce2104e3-0fcb-4b42-9c08-8e5215a36039"
 header = {"X-Riot-Token" : api_key}
 
 API_LIMIT_TIME = 0.05
