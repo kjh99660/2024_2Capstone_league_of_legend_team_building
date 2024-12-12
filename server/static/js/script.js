@@ -704,7 +704,17 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 fetch(url="/api/analyze?region=" + region + "&nickname=" + encodeURIComponent(nickname))
-    .then((response) => response.json())
+    .then((response) => {
+        if (!response.ok) {
+            switch (response.status) {
+                case 400:
+                    throw new Error("잘못된 요청");
+                case 404:
+                    throw new Error("유저 탐색 실패 혹은 API 요청 횟수 초과");
+            }
+        }
+        return response.json();
+    })
     .then((data) => {
         dataStore = {
             "all": [],
@@ -808,8 +818,11 @@ fetch(url="/api/analyze?region=" + region + "&nickname=" + encodeURIComponent(ni
         }
 
         select("all");
-    }
-);
+    })
+    .catch((error) => {
+        features = document.getElementById("features");
+        features.innerHTML = error.message;
+    });
 
 function createFeature(text, src) {
     const div = document.createElement("div");
