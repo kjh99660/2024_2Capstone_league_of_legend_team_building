@@ -755,7 +755,7 @@ fetch(url="/api/analyze?region=" + region + "&nickname=" + encodeURIComponent(ni
         } else if (method == "analyze") {
             let chrtics = data["characteristics"];
             
-            let text1 = "공격성";
+            let text1 = "능동적 플레이";
             let src = ["/static/img/defensive.png", "/static/img/neutral.png", "/static/img/offensive.png"];
             let text2 = ""
             switch (chrtics["aggression"]) {
@@ -772,24 +772,7 @@ fetch(url="/api/analyze?region=" + region + "&nickname=" + encodeURIComponent(ni
 
             features.appendChild(createFeature2(text1, text2, src, chrtics["aggression"]));
 
-            text1 = "로밍성";
-            src = ["/static/img/lane.png", "/static/img/neutral.png", "/static/img/roam.png"]
-
-            switch (chrtics["roamness"]) {
-                case -1:
-                    text2 = "라인전 위주";
-                    break;
-                case 0:
-                    text2 = "중립적";
-                    break;
-                case 1:
-                    text2 = "로밍 위주";
-                    break;
-            }
-
-            features.appendChild(createFeature2(text1, text2, src, chrtics["roamness"]));
-
-            text1 = "백도어";
+            text1 = "팀 교전 선호";
             src = ["/static/img/fight.png", "/static/img/neutral.png", "/static/img/backdoor.png"]
 
             switch (chrtics["backdoor"]) {
@@ -805,6 +788,23 @@ fetch(url="/api/analyze?region=" + region + "&nickname=" + encodeURIComponent(ni
             }
 
             features.appendChild(createFeature2(text1, text2, src, chrtics["backdoor"]));
+
+            text1 = "협력 선호";
+            src = ["/static/img/roam.png", "/static/img/neutral.png", "/static/img/lane.png"]
+
+            switch (chrtics["roamness"]) {
+                case -1:
+                    text2 = "로밍 위주";
+                    break;
+                case 0:
+                    text2 = "중립적";
+                    break;
+                case 1:
+                    text2 = "라인전 위주";
+                    break;
+            }
+
+            features.appendChild(createFeature2(text1, text2, src, chrtics["roamness"]));
         }
 
         select("all");
